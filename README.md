@@ -1,5 +1,20 @@
 # pruebas-e2e-grupo4
 
+## Instalar aplicación sobre pruebas
+
+Para esta instalación se requiere tener el Ghost-CLI instalado en la máquina
+
+Abrir un terminal en la carpeta ghost
+
+Ejecutar los siguientes comandos:
+* ghost install --force 3.41.1 --local
+
+Si se muestra un error relacionado con sqlite3 ejecutar
+* npm install sqlite3 --save
+
+Si luego de instalar no se ha iniciado la app, ejecutar
+* ghost start
+
 ## Funcionalidades a probar
 
 * 1. Crear una Entrada  

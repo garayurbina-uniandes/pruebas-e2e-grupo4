@@ -1,6 +1,9 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const expect = require('chai').expect;
 
+//variable for pages quantity
+let pageBeforeQuantity = 0;
+
 // Login Steps
 
 When('I enter site title {string}', async function (title){
@@ -92,3 +95,47 @@ Then('I expect to see tag information', async function(){
 })
 
 //Etiquetas Steps END
+
+//Create page steps
+When('I click pages item', async function() {
+    let element = await this.driver.$('#ember37');
+    return await element.click();
+});
+
+When('I click on new page', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    pageBeforeQuantity = elements.length;
+    let element = await this.driver.$('a[href="#/editor/page/"]');
+    return await element.click();
+});
+
+When('I enter page title {string}', async function (title) {
+    let element = await this.driver.$('.gh-editor-title.ember-text-area.gh-input.ember-view');
+    return await element.setValue(title);
+});
+
+When('I enter page description {string}', async function (description) {
+    let element = await this.driver.$('div[data-placeholder="Begin writing your page..."]');
+    return await element.setValue(description);
+});
+
+When('I click on publish page options', async function(){
+    let element = await this.driver.$('.ember-view.ember-basic-dropdown-trigger.gh-btn.gh-btn-outline.gh-publishmenu-trigger');
+    return await element.click();
+});
+
+When('I click on publish page', async function(){
+    let element = await this.driver.$('.gh-btn.gh-btn-blue.gh-publishmenu-button.gh-btn-icon.ember-view');
+    return await element.click();
+});
+
+When('I click to return pages list', async function(){
+    let element = await this.driver.$('a[href="#/pages/"]');
+    return await element.click();
+});
+
+Then('I expect find the new page', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(elements.length).to.greaterThan(pageBeforeQuantity);
+});
+//End page steps

@@ -2,7 +2,7 @@ Feature: Registrar usuario
 
 @user1 @web
 
-Scenario: Como primer usuario registro en ghost
+Scenario: Como primer usuario registro mi cuenta en ghost
 
 Given I navigate to page "http://localhost:2368/ghost/#/setup/one"
 

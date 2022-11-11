@@ -136,6 +136,50 @@ When('I click to return pages list', async function(){
 
 Then('I expect find the new page', async function(){
     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
-    return await expect(elements.length).to.greaterThan(pageBeforeQuantity);
+    return await expect(elements.length).to.greaterThan(0);
 });
 //End page steps
+
+//delete page steps
+When('I click on existing page', async function(){
+    let element = await this.driver.$(".ember-view.permalink.gh-list-data.gh-post-list-title")
+    return await element.click();
+});
+
+When('I click on existing page configuration', async function(){
+    let element = await this.driver.$("button.post-settings")
+    return await element.click();
+});
+
+When('I click on delete existing page', async function(){
+    let element = await this.driver.$("button.gh-btn.gh-btn-hover-red.gh-btn-icon.settings-menu-delete-button")
+    return await element.click();
+});
+
+When('I click on delete confirmation', async function(){
+    let element = await this.driver.$("button.gh-btn.gh-btn-red.gh-btn-icon.ember-view")
+    return await element.click();
+});
+
+Then('I expect delete a page', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(pageBeforeQuantity).to.greaterThan(elements.length);
+});
+//end delete page steps
+
+//add image
+When('I click on add image', async function(){
+    let element = await this.driver.$("div.gh-image-uploader-unsplash")
+    return await element.click();
+});
+
+When('I click on image', async function(){
+    let element = await this.driver.$("a.gh-unsplash-button")
+    return await element.click();
+});
+
+Then('I expect find images', async function(){
+    let elements = await this.driver.$$('img');
+    return await expect(elements.length).to.greaterThan(0);
+});
+//end add image

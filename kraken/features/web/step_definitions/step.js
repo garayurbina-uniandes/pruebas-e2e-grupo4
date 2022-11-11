@@ -151,13 +151,18 @@ When('I click on existing page configuration', async function(){
     return await element.click();
 });
 
+When('I do scroll', async function(){
+    let formPage = await this.driver.$("form");
+    return await formPage.scrollIntoView();
+});
+
 When('I click on delete existing page', async function(){
-    let element = await this.driver.$("button.gh-btn.gh-btn-hover-red.gh-btn-icon.settings-menu-delete-button")
+    let element = await this.driver.$("button.settings-menu-delete-button")
     return await element.click();
 });
 
 When('I click on delete confirmation', async function(){
-    let element = await this.driver.$("button.gh-btn.gh-btn-red.gh-btn-icon.ember-view")
+    let element = await this.driver.$(".gh-btn.gh-btn-red.gh-btn-icon.ember-view")
     return await element.click();
 });
 

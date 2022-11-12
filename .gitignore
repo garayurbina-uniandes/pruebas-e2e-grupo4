@@ -108,3 +108,7 @@ reports
 .kraken
 screenshots
 videos
+
+# Ghost folder
+ghost/*
+!ghost/.keep

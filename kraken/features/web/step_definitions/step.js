@@ -3,6 +3,8 @@ const expect = require('chai').expect;
 
 //variable for pages quantity
 let pageBeforeQuantity = 0;
+//variable for posts quantity
+let postBeforeQuantity = 0;
 
 // Login Steps
 
@@ -188,3 +190,46 @@ Then('I expect find images', async function(){
     return await expect(elements.length).to.greaterThan(0);
 });
 //end add image
+
+//post steps
+When('I click post item', async function() {
+    let element = await this.driver.$('#ember12');
+    return await element.click();
+});
+
+When('I click on new post', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    postBeforeQuantity = elements.length;
+    let element = await this.driver.$('a[href="#/editor/post/"]');
+    return await element.click();
+});
+
+When('I enter post title {string}', async function (title) {
+    let element = await this.driver.$('.gh-editor-title.ember-text-area.gh-input.ember-view');
+    return await element.setValue(title);
+});
+
+When('I enter post description {string}', async function (description) {
+    let element = await this.driver.$('div[data-placeholder="Begin writing your post..."]');
+    return await element.setValue(description);
+});
+
+When('I click on publish post options', async function(){
+    let element = await this.driver.$('.ember-view.ember-basic-dropdown-trigger.gh-btn.gh-btn-outline.gh-publishmenu-trigger');
+    return await element.click();
+});
+
+When('I click on publish post', async function(){
+    let element = await this.driver.$('.gh-btn.gh-btn-blue.gh-publishmenu-button.gh-btn-icon.ember-view');
+    return await element.click();
+});
+
+When('I click to return posts list', async function(){
+    let element = await this.driver.$('a[href="#/posts/"]');
+    return await element.click();
+});
+
+Then('I expect find the new post', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(elements.length).to.greaterThan(0);
+});

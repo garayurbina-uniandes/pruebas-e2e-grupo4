@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "kraken-node": "^1.0.24",
-    "chai": "^4.2.0"
+    "chai": "^4.3.7",
+    "kraken-node": "^1.0.24"
   }
 }

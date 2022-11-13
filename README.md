@@ -39,3 +39,7 @@ Si luego de instalar no se ha iniciado la app, ejecutar
 | Como usuario registro una etiqueta interna en ghost con datos validos |Crear una Etiqueta |
 | Como usuario visualizo una etiqueta creada en ghost si existe al menos una |Ver todas las Etiquetas |
 | Como usuario elimino una etiqueta en ghost si existe al menos una |Eliminar una Etiqueta   |
+| Como usuario creo una entrada, le asigno etiquetas y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
+| Como usuario actualizo una entrada, actualizar contenido y sus etiquetas, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
+| Como usuario creo una entrada, la programo para publicación en 5 minutos, espero ese tiempo y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
+| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |

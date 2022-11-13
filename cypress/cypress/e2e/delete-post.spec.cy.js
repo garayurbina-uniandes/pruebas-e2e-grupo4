@@ -1,8 +1,8 @@
-describe('Testing post delete', () => {
+describe('Como usuario elimino una entrada, luego verifio que ya no esté listada', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Delete post and check', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')

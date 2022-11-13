@@ -12,16 +12,16 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
 
     it('Create a post', () => {
         cy.wait(2000);
-        cy.get('#ember28').should('be.visible');
+        cy.get('a[href="#/posts/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember28').click();
+        cy.get('a[href="#/posts/"]').first().click();
         cy.wait(1000);
-        let postsBeforeQuantity = 0;
+        let postsBeforeCreate = 0;
         cy.get('h3[class="gh-content-entry-title"]')
             .then(($value) => {
-                postsBeforeQuantity = $value.length
+                postsBeforeCreate = $value.length
             });
-        cy.get('a.ember-view.gh-btn.gh-btn-green').click(); // new post
+        cy.get('a.ember-view.gh-btn.gh-btn-green').click();
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type('Kraken Test 4')
         cy.wait(2000);
@@ -37,10 +37,12 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
         cy.wait(2000);
         cy.get('h3[class="gh-content-entry-title"]')
             .then(($value) => {
-                expect($value.length).to.equal(postsBeforeQuantity + 1)
+                expect($value.length).to.equal(postsBeforeCreate + 1)
             });
     })
 });
+
+
 // describe('Testing basic Angular registration', () => {
 //     before(() => {
 //         cy.visit('http://localhost:2368/ghost/#/signin')

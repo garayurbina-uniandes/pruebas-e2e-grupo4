@@ -110,5 +110,6 @@ screenshots
 videos
 
 # Ghost folder
-ghost/*
-!ghost/.keep
+# ghost/*
+# !ghost/.keep
+ghost

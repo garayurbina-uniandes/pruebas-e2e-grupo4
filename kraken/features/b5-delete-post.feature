@@ -1,4 +1,4 @@
-Feature: Eliminar página con exito
+Feature: Eliminar post con exito
 
   @user1 @web
   Scenario: Como usuario inicio sesión en ghost con datos válidos
@@ -9,14 +9,15 @@ Feature: Eliminar página con exito
     And I wait for 2 seconds
     And I click Sign in
     And I wait for 2 seconds
-    And I click pages item
+    And I click post item
+    And I wait for 8 seconds
+    And I click on existing post
     And I wait for 2 seconds
-    And I click on existing page
+    And I click on existing post configuration
     And I wait for 2 seconds
-    And I click on existing page configuration
+    And I do scroll
     And I wait for 2 seconds
-    And I click on add image
+    And I click on delete existing post
     And I wait for 2 seconds
-    And I click on image
-    And I wait for 5 seconds
-    Then I expect find images
+    And I click on delete confirmation
+    Then I expect delete a post

@@ -30,16 +30,20 @@ Si luego de instalar no se ha iniciado la app, ejecutar
 * 11. Iniciar Sesión
 
 ## Escenarios
-| Nombre del escenario | Funcionalidad |
-| -------------------  | ------------- |
-| Como usuario inicio sesión en ghost con datos válidos | Iniciar Sesión |
-| Como primer usuario registro mi cuenta en ghost | Crear un Usuario |
-| Como usuario registro una etiqueta en ghost con datos vacíos  | Crear una Etiqueta|
-| Como usuario registro una etiqueta externa en ghost con datos validos |Crear una Etiqueta |
-| Como usuario registro una etiqueta interna en ghost con datos validos |Crear una Etiqueta |
-| Como usuario visualizo una etiqueta creada en ghost si existe al menos una |Ver todas las Etiquetas |
-| Como usuario elimino una etiqueta en ghost si existe al menos una |Eliminar una Etiqueta   |
+| Nombre del escenario                                                                 | Funcionalidad           |
+|--------------------------------------------------------------------------------------|-------------------------|
+| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |
+| Como primer usuario registro mi cuenta en ghost                                      | Crear un Usuario        |
+| Como usuario registro una etiqueta en ghost con datos vacíos                         | Crear una Etiqueta      |
+| Como usuario registro una etiqueta externa en ghost con datos validos                | Crear una Etiqueta      |
+| Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |
+| Como usuario visualizo una etiqueta creada en ghost si existe al menos una           | Ver todas las Etiquetas |
+| Como usuario elimino una etiqueta en ghost si existe al menos una                    | Eliminar una Etiqueta   |
+| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
+| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |
+| Como usuario agrego una imagen a una página y validar que se agrugue al formulario   | Agregar una imagen a una Página       |
 | Como usuario creo una entrada, le asigno etiquetas y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
 | Como usuario actualizo una entrada, actualizar contenido y sus etiquetas, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
 | Como usuario creo una entrada, la programo para publicación en 5 minutos, espero ese tiempo y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
 | Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
+|Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |

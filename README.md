@@ -37,7 +37,9 @@ Si luego de instalar no se ha iniciado la app, ejecutar
 | Como usuario registro una etiqueta en ghost con datos vacíos                         | Crear una Etiqueta      |
 | Como usuario registro una etiqueta externa en ghost con datos validos                | Crear una Etiqueta      |
 | Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |
-| Como usuario visualizo una etiqueta creada en ghost si existe al menos una           | Ver todas las Etiquetas |
+| Como usuario visualizo una etiqueta pública creada en ghost si existe al menos una   | Ver todas las Etiquetas |
+| Como usuario visualizo una etiqueta interna creada en ghost si existe al menos una   | Ver todas las Etiquetas |
+| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |
 | Como usuario elimino una etiqueta en ghost si existe al menos una                    | Eliminar una Etiqueta   |
 | Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
 | Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |

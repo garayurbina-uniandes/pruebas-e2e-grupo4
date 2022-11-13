@@ -202,17 +202,15 @@ Then('I expect find images', async function () {
 //end add image
 
 // Start create a post
-
 //post creation steps
 // When('I click post item', async function() {
-//     let element = await this.driver.$('#ember12');
+//     let element = await this.driver.$('a[href="#/posts/"]');
 //     return await element.click();
 // });
 
 // When('I click on new post', async function(){
 //     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
 //     postBeforeQuantity = elements.length;
-
 
 When('I press New Post button', async function () {
     let element = await this.driver.$('a[href="#/editor/post/"]');

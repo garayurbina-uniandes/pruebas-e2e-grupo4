@@ -1,7 +1,7 @@
 Feature: Actualizar una entrada
 
         @user3 @web
-        Scenario: Como usuario actualizo una entrada, actualizar contenido y sus etiquetas, luego verifico que esté listada
+        Scenario: Como usuario actualizo una entrada y luego verifico que esté listada
                 Given I navigate to page "http://localhost:2368/ghost/#/signin"
                 When I enter email "a@a.com"
                 And I wait for 1 seconds

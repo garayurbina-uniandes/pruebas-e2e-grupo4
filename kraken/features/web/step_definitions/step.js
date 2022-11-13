@@ -191,7 +191,7 @@ Then('I expect find images', async function(){
 });
 //end add image
 
-//post steps
+//post creation steps
 When('I click post item', async function() {
     let element = await this.driver.$('#ember12');
     return await element.click();
@@ -233,3 +233,36 @@ Then('I expect find the new post', async function(){
     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
     return await expect(elements.length).to.greaterThan(0);
 });
+//finish post creation
+
+//delete post steps
+When('I click on existing post', async function(){
+    let element = await this.driver.$("li.gh-list-row.gh-posts-list-item")
+    return await element.click();
+});
+
+When('I click on existing post configuration', async function(){
+    let element = await this.driver.$("button.post-settings")
+    return await element.click();
+});
+
+When('I do scroll', async function(){
+    let formPage = await this.driver.$("form");
+    return await formPage.scrollIntoView();
+});
+
+When('I click on delete existing post', async function(){
+    let element = await this.driver.$("button.gh-btn.gh-btn-hover-red.gh-btn-icon.settings-menu-delete-button")
+    return await element.click();
+});
+
+When('I click on delete confirmation', async function(){
+    let element = await this.driver.$(".gh-btn.gh-btn-red.gh-btn-icon.ember-view")
+    return await element.click();
+});
+
+Then('I expect delete a post', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(postBeforeQuantity).to.greaterThan(elements.length);
+});
+//end steps delete

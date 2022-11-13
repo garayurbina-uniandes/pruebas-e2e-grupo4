@@ -1,4 +1,4 @@
-Feature: Eliminar página con exito
+Feature: Agregar una imagen a una página con exito
 
   @user1 @web
   Scenario: Como usuario inicio sesión en ghost con datos válidos

@@ -1,4 +1,4 @@
-Feature: Iniciar sesión con exito
+Feature: Crear una página con exito
 
 @user1 @web
 Scenario: Como usuario inicio sesión en ghost con datos válidos

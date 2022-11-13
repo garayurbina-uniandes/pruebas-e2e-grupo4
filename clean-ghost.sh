@@ -1,3 +1,6 @@
 cd ghost
-rm -drf content current versions
-rm -f .ghost-cli .ghostpid config.development.json
+# ghost stop
+ghost uninstall --force
+# rm -drfv content current versions node_modules
+# rm -fv .ghost-cli .ghostpid config.development.json package-lock.json package.json
+rm -fv package-lock.json package.json

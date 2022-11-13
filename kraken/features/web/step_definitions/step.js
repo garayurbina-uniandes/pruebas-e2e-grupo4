@@ -261,8 +261,14 @@ When('I do scroll inside settings', async function () {
     return await formPage.scrollIntoView();
 });
 
+When('I press the All post filter option', async function () {
+    let elements = await this.driver.$$('.ember-power-select-selected-item');
+    return await elements[0].click()
+});
 
-When('', async function () {
+When('I press the All authors filter option', async function () {
+    let elements = await this.driver.$$('.ember-power-select-selected-item');
+    return await elements[1].click()
+});
 
-})
 // End create a post

@@ -203,7 +203,7 @@ Then('I expect find images', async function(){
 
 //post creation steps
 When('I click post item', async function() {
-    let element = await this.driver.$('#ember12');
+    let element = await this.driver.$('a[href="#/posts/"]');
     return await element.click();
 });
 
@@ -266,10 +266,6 @@ When('I click on delete existing post', async function(){
     return await element.click();
 });
 
-When('I click on delete confirmation', async function(){
-    let element = await this.driver.$(".gh-btn.gh-btn-red.gh-btn-icon.ember-view")
-    return await element.click();
-});
 
 Then('I expect delete a post', async function(){
     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');

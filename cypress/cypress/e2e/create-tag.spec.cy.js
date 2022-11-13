@@ -27,7 +27,7 @@ describe('Testing Tag Creation with Invalid data on Ghost', () => {
     })
 });
 
-describe('Testing External Tag Creation with valid data on Ghost', () => {
+describe('Testing Public Tag Creation with valid data on Ghost', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -38,7 +38,7 @@ describe('Testing External Tag Creation with valid data on Ghost', () => {
             cy.get('button.login.gh-btn.gh-btn-blue.gh-btn-block.gh-btn-icon.ember-view').click()
         });
     })
-    it('Create External Tag', () => {
+    it('Create Public Tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
         cy.get('#ember38').should('be.visible');
@@ -47,7 +47,7 @@ describe('Testing External Tag Creation with valid data on Ghost', () => {
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.wait(2000);
-        cy.get('#tag-name').type('tagmajal') // create external tag
+        cy.get('#tag-name').type('tagmajal') // create Public tag
         cy.wait(2000);
         cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.ember-view').click() //save tag
         cy.wait(2000);
@@ -74,7 +74,7 @@ describe('Testing Internal Tag Creation with valid data on Ghost', () => {
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.wait(2000);
-        cy.get('#tag-name').type('#interna') // create external tag
+        cy.get('#tag-name').type('#interna') // create internal tag
         cy.wait(2000);
         cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.ember-view').click() //save tag
         cy.wait(2000);

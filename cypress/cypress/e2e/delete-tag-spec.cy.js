@@ -1,4 +1,4 @@
-describe('Testing External Tag Delete on Ghost', () => {
+describe('Testing Public Tag Delete on Ghost', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

@@ -76,6 +76,16 @@ When('I enter tag name {string}', async function(tag){
     element.setValue(tag)
 })
 
+When('I filter by internal tags', async function(){
+    let element = await this.driver.$('span=Internal tags');
+    return await element.click();
+})
+
+Then('I expect to see internal tags', async function(){
+    let element = await this.driver.$(".gh-tag-list-name").getText();
+    return await expect(element).to.contain('#');
+})
+
 When('I click on existing tag', async function(){
     let element = await this.driver.$(".gh-list-row.gh-tags-list-item.ember-view")
     return await element.click();

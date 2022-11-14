@@ -1,4 +1,4 @@
-describe('Testing basic Angular registration', () => {
+describe('Como usuario creo una página y validar que se agruegue al listado de páginas', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

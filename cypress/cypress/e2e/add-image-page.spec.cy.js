@@ -1,4 +1,4 @@
-describe('Testing basic Angular registration', () => {
+describe('Como usuario agrego una imagen a una página y validar que se agrugue al formulario', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

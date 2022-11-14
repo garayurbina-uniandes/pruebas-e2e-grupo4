@@ -28,7 +28,6 @@ describe('Como usuario elimino una entrada, luego verifio que ya no esté listad
         cy.wait(2000);
         cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
         cy.wait(2000);
-        cy.wait(2000);
         cy.get('h3[class="gh-content-entry-title"]')
             .then(($value) => {
                 expect($value.length).to.equal(postsBeforeQuantity -1)

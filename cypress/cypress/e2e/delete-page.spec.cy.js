@@ -1,4 +1,4 @@
-describe('Testing basic Angular registration', () => {
+describe('Como usuario elimino una página y validar que se ya no este en el listado de páginas', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -34,11 +34,6 @@ describe('Testing basic Angular registration', () => {
         cy.wait(2000);
         cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
         cy.wait(2000);
-        cy.wait(2000);
-        cy.get('h3[class="gh-content-entry-title"]')
-            .then(($value) => {
-                expect($value.length).to.equal(pageBeforeQuantity -1)
-            });
         cy.document().then(($document) => { //Check if Element exists
             const documentResult = $document.querySelectorAll(elementToTest)
             if (documentResult.length) {

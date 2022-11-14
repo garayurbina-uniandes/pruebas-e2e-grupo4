@@ -26,7 +26,7 @@ Para ejecutar las pruebas de Cypress, seguir los siguiente pasos
 
 1. Entrar a la carpeta de Cypress, desde la raiz del proyecto: `cd cypress`
 2. Instalar las dependencias: `npm i`
-3. Ejecutar los test: `npm run start`
+3. Ejecutar los test: `npm test`
 4. Se abrirá automáticamete en el navegador la interfaz de Cypress y debe seleccionar la opción **E2E Testing**
 5. Luego seleccionar el navegador en el que desea hacer las pruebas y hacer clic en "Start E2E Testing in ..."
 6. 

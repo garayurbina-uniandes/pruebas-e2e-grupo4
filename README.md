@@ -12,6 +12,9 @@ Ejecutar el siguiente script ubicado en la carpeta raiz del proyecto:
 Si se muestra un error relacionado con sqlite3 ejecutar
 * `npm install sqlite3 --save`
 
+Si ghost no se inicia automáticamente ejecutar
+* `ghost start`
+
 Luego de ejecutar el script, ghost empezará a ejecutar en el puerto `2368` del localhost. Asegurese que este puerto no esté ocupado.
 
 ## Ejecución de pruebas

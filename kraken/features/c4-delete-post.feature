@@ -10,6 +10,7 @@ Feature: Eliminar una entrada
                 When I click Sign in
                 And I wait for 1 seconds
                 When I navigate to page "http://localhost:2368/ghost/#/posts"
+                When I count number of posts
                 When I select the first post
                 When I press settings button
                 When I wait for 3 seconds
@@ -18,4 +19,4 @@ Feature: Eliminar una entrada
                 When I wait for 3 seconds
                 When I press a button with id "button.gh-btn-red"
                 When I wait for 3 seconds
-                Then Should no exist post
+                Then Should have one less post

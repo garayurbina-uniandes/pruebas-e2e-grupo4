@@ -10,8 +10,11 @@ Feature: Actualizar una entrada
                 When I click Sign in
                 And I wait for 1 seconds
                 When I navigate to page "http://localhost:2368/ghost/#/posts"
+                When I count number of posts
                 When I select the first post
                 When I enter post title "Kraken Test Post Updated"
                 When I wait for 5 seconds
-                When I press a button with id 'a[href="#/posts/"]'
-                # Then Should exists post with title "Kraken Test Post Updated"
+                When I press a button with id ".gh-publishmenu"
+                When I press a button with id ".gh-publishmenu-button"
+                When I press a button with id 'a[href="#/posts/"].blue.link.fw4'
+                Then Should have the same amount of posts

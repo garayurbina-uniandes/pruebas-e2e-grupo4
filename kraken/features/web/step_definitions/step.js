@@ -202,15 +202,9 @@ Then('I expect find images', async function () {
 //end add image
 
 // Start create a post
-//post creation steps
-// When('I click post item', async function() {
-//     let element = await this.driver.$('a[href="#/posts/"]');
-//     return await element.click();
-// });
 
-// When('I click on new post', async function(){
-//     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
-//     postBeforeQuantity = elements.length;
+//variable for pages quantity
+let postsBeforeCreate = 0;
 
 When('I press New Post button', async function () {
     let element = await this.driver.$('a[href="#/editor/post/"]');
@@ -231,13 +225,6 @@ When('I enter post description {string}', async function (description) {
 When('I press settings button', async function () {
     let element = await this.driver.$('button.post-settings');
     return await element.click();
-});
-
-When('I add the Tag {string}', async function (tag) {
-    let element = await this.driver.$('label[for="tag-input"]');
-    let parent = element.parentNode
-    // let element = await this.driver.$('#ember-power-select-trigger-multiple-input-ember54');
-    return await element.setValue(tag);
 });
 
 When('I press the button Add Tag', async function () {
@@ -262,9 +249,6 @@ When('I press a button with id {string}', async function (id) {
 
 Then('Should exists a Post with the name {string}', async function (postName) {
     let element = await this.driver.$$('.gh-content-entry-title');
-    console.log(element[0]);
-    console.log(element.length);
-    console.log(element.map((e) => e.emit()));
     return await expect(element.textContent).contain(postName)
 });
 
@@ -279,8 +263,8 @@ When('I select the first post', async function () {
 })
 
 When('I do scroll inside settings', async function () {
-    let formPage = await this.driver.$("button.settings-menu-delete-button");
-    return await formPage.scrollIntoView();
+    let object = await this.driver.$("button.settings-menu-delete-button");
+    return await object.scrollIntoView();
 });
 
 When('I press the All post filter option', async function () {
@@ -293,56 +277,25 @@ When('I press the All authors filter option', async function () {
     return await elements[1].click()
 });
 
-// End create a post
-// When('I click on publish post options', async function(){
-//     let element = await this.driver.$('.ember-view.ember-basic-dropdown-trigger.gh-btn.gh-btn-outline.gh-publishmenu-trigger');
-//     return await element.click();
-// });
+When('I count number of posts', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    postsBeforeCreate = elements.length;
+    return await expect(postsBeforeCreate).to.greaterThan(0);
+});
 
-// When('I click on publish post', async function(){
-//     let element = await this.driver.$('.gh-btn.gh-btn-blue.gh-publishmenu-button.gh-btn-icon.ember-view');
-//     return await element.click();
-// });
+Then('Should have one more post', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(postsBeforeCreate).to.lessThan(elements.length);
+});
 
-// When('I click to return posts list', async function(){
-//     let element = await this.driver.$('a[href="#/posts/"]');
-//     return await element.click();
-// });
+Then('Should have the same amount of posts', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(postsBeforeCreate).to.equals(elements.length);
+});
 
-// Then('I expect find the new post', async function(){
-//     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
-//     return await expect(elements.length).to.greaterThan(0);
-// });
-// //finish post creation
+Then('Should have one less post', async function(){
+    let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
+    return await expect(postsBeforeCreate).to.greaterThan(elements.length);
+});
 
-// //delete post steps
-// When('I click on existing post', async function(){
-//     let element = await this.driver.$("li.gh-list-row.gh-posts-list-item")
-//     return await element.click();
-// });
-
-// When('I click on existing post configuration', async function(){
-//     let element = await this.driver.$("button.post-settings")
-//     return await element.click();
-// });
-
-// When('I do scroll', async function(){
-//     let formPage = await this.driver.$("form");
-//     return await formPage.scrollIntoView();
-// });
-
-// When('I click on delete existing post', async function(){
-//     let element = await this.driver.$("button.gh-btn.gh-btn-hover-red.gh-btn-icon.settings-menu-delete-button")
-//     return await element.click();
-// });
-
-// When('I click on delete confirmation', async function(){
-//     let element = await this.driver.$(".gh-btn.gh-btn-red.gh-btn-icon.ember-view")
-//     return await element.click();
-// });
-
-// Then('I expect delete a post', async function(){
-//     let elements = await this.driver.$$('h3[class="gh-content-entry-title"]');
-//     return await expect(postBeforeQuantity).to.greaterThan(elements.length);
-// });
 // //end steps delete

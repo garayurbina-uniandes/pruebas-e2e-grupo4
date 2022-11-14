@@ -21,15 +21,14 @@ Para ejecutar las pruebas de Kraken, seguir los siguiente pasos
 1. Entrar a la carpeta de Kraken, desde la raiz del proyecto: `cd kraken`
 2. Instalar las dependencias: `npm i`
 3. Ejecutar los test: `npm test`
+4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
 
 Para ejecutar las pruebas de Cypress, seguir los siguiente pasos
 
 1. Entrar a la carpeta de Cypress, desde la raiz del proyecto: `cd cypress`
 2. Instalar las dependencias: `npm i`
-3. Ejecutar los test: `npm run start`
-4. Se abrirá automáticamete en el navegador la interfaz de Cypress y debe seleccionar la opción **E2E Testing**
-5. Luego seleccionar el navegador en el que desea hacer las pruebas y hacer clic en "Start E2E Testing in ..."
-6. 
+3. Ejecutar los test: `npm test`
+4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
 
 ## Funcionalidades a probar
 

@@ -6,14 +6,30 @@ Para esta instalación se requiere tener el Ghost-CLI instalado en la máquina
 
 Abrir un terminal en la carpeta ghost
 
-Ejecutar los siguientes comandos:
-* ghost install --force 3.41.1 --local
+Ejecutar el siguiente script ubicado en la carpeta raiz del proyecto:
+* `sh setup-ghost.sh`
 
 Si se muestra un error relacionado con sqlite3 ejecutar
-* npm install sqlite3 --save
+* `npm install sqlite3 --save`
 
-Si luego de instalar no se ha iniciado la app, ejecutar
-* ghost start
+Luego de ejecutar el script, ghost empezará a ejecutar en el puerto `2368` del localhost. Asegurese que este puerto no esté ocupado.
+
+## Ejecución de pruebas
+
+Para ejecutar las pruebas de Kraken, seguir los siguiente pasos
+
+1. Entrar a la carpeta de Kraken, desde la raiz del proyecto: `cd kraken`
+2. Instalar las dependencias: `npm i`
+3. Ejecutar los test: `npm test`
+
+Para ejecutar las pruebas de Cypress, seguir los siguiente pasos
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto: `cd cypress`
+2. Instalar las dependencias: `npm i`
+3. Ejecutar los test: `npm run start`
+4. Se abrirá automáticamete en el navegador la interfaz de Cypress y debe seleccionar la opción **E2E Testing**
+5. Luego seleccionar el navegador en el que desea hacer las pruebas y hacer clic en "Start E2E Testing in ..."
+6. 
 
 ## Funcionalidades a probar
 
@@ -30,7 +46,7 @@ Si luego de instalar no se ha iniciado la app, ejecutar
 * 11. Iniciar Sesión
 
 ## Escenarios
-| Nombre del escenario                                                                 | Funcionalidad           |
+| Nombre del escenario                                                                 | Funcionalidades           |
 |--------------------------------------------------------------------------------------|-------------------------|
 | Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |
 | Como primer usuario registro mi cuenta en ghost                                      | Crear un Usuario        |
@@ -44,8 +60,8 @@ Si luego de instalar no se ha iniciado la app, ejecutar
 | Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
 | Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |
 | Como usuario agrego una imagen a una página y validar que se agrugue al formulario   | Agregar una imagen a una Página       |
-| Como usuario creo una entrada, le asigno etiquetas y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
-| Como usuario actualizo una entrada, actualizar contenido y sus etiquetas, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
+| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
+| Como usuario actualizo una entrada, actualizar su titulo, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
 | Como usuario creo una entrada, la programo para publicación en 5 minutos, espero ese tiempo y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
 | Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
-|Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |
+| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |

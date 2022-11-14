@@ -20,12 +20,11 @@ describe('Testing basic Angular registration', () => {
             const documentResult = $document.querySelectorAll(elementToTest)
             if (documentResult.length) {
                 cy.get('h3[class="gh-content-entry-title"]')
-                .then(($value) => {
-                    pageBeforeQuantity = $value.length
-                });
+                    .then(($value) => {
+                        pageBeforeQuantity = $value.length
+                    });
             }
-          })
-       
+        })
         cy.get('a[href="#/editor/page/"]').first().click();
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type('Prueba e2e ghost y cypress');

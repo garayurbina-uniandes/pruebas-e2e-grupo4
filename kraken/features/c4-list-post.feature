@@ -14,4 +14,4 @@ Feature: Crear una entrada
                 When I press a button with id 'li[data-option-index="2"]'
                 When I press the All authors filter option
                 When I press a button with id 'li[data-option-index="1"]'
-                And I wait for 9999 seconds
+                And I wait for 5 seconds

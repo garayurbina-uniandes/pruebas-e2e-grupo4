@@ -25,7 +25,13 @@ describe('Como usuario actualizo una entrada y luego verifico que esté listada'
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type(' - Updated')
         cy.wait(5000);
-        cy.get('a.blue.link.fw4.flex.items-center.ember-view').click()
+        cy.get('.gh-publishmenu').click();
+        cy.wait(2000);
+        cy.get('.gh-publishmenu-button').click();
+        cy.wait(2000);
+        cy.get('a[href="#/posts/"].blue.link.fw4').should('be.visible');
+        cy.wait(1000);
+        cy.get('a[href="#/posts/"].blue.link.fw4').first().click()
         cy.wait(2000);
         cy.get('h3[class="gh-content-entry-title"]')
             .then(($value) => {

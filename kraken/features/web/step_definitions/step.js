@@ -52,7 +52,7 @@ When('I register my user', async function () {
 
 //Etiquetas Steps BEGIN
 When('I select tags section', async function () {
-    let element = await this.driver.$('#ember38');
+    let element = await this.driver.$('a[href="#/tags/"]');
     return await element.click();
 })
 

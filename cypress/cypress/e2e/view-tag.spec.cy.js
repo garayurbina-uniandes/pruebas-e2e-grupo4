@@ -12,11 +12,11 @@ describe('Testing Public Tag View on Ghost', () => {
     it('View existing Public tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
-        cy.get('.gh-list-row.gh-tags-list-item.ember-view').first().click()//Click on existing tag
+        cy.get('a[title="Edit tag"]').first().click()//Click on existing tag
         cy.wait(2000);
         cy.get('#tag-name') //Expect to see Tag info
             .then($value => {
@@ -39,9 +39,9 @@ describe('Testing Filter Internal Tags on Ghost', () => {
     it('Filter by internal tags', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
         cy.get('span').contains('Internal tags').click(); //Filter by internal tags
         cy.wait(2000);
@@ -66,13 +66,13 @@ describe('Testing Internal Tag View on Ghost', () => {
     it('View existing Internal tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
         cy.get('span').contains('Internal tags').click(); //Filter by internal tags
         cy.wait(2000);
-        cy.get('.gh-list-row.gh-tags-list-item.ember-view').first().click()//Click on existing tag
+        cy.get('a[title="Edit tag"]').first().click()//Click on existing tag
         cy.wait(2000);
         cy.get('#tag-name') //Expect to see tag info
             .then($value => {

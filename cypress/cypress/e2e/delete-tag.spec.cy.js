@@ -12,11 +12,11 @@ describe('Testing Public Tag Delete on Ghost', () => {
     it('Delete existing tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
-        cy.get('.gh-list-row.gh-tags-list-item.ember-view').first().click()//Click on existing tag
+        cy.get('a[title="Edit tag"]').first().click()//Click on existing tag
         cy.wait(2000);
         cy.get('#tag-name')
             .then($value => {

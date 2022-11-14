@@ -12,9 +12,9 @@ describe('Testing Tag Creation with Invalid data on Ghost', () => {
     it('Create tag with invalid data', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.wait(2000);
@@ -41,9 +41,9 @@ describe('Testing Public Tag Creation with valid data on Ghost', () => {
     it('Create Public Tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.wait(2000);
@@ -68,9 +68,9 @@ describe('Testing Internal Tag Creation with valid data on Ghost', () => {
     it('Create Internal Tag', () => {
         cy.wait(2000);
         //Create Tag with invalid data
-        cy.get('#ember38').should('be.visible');
+        cy.get('a[href="#/tags/"]').should('be.visible');
         cy.wait(1000);
-        cy.get('#ember38').click(); //Select tags section
+        cy.get('a[href="#/tags/"]').click(); //Select tags section
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.wait(2000);

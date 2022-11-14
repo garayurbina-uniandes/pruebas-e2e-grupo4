@@ -42,7 +42,7 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
     })
 });
 
-describe('Como usuario creo una entrada, la programo para publicación en 5 minutos, espero ese tiempo y luego verifico que esté listada', () => {
+describe('Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

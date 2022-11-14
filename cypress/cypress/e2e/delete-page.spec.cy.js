@@ -15,9 +15,11 @@ describe('Testing basic Angular registration', () => {
         cy.get('a[href="#/pages/"]').click();
         cy.wait(2000);
         let pageBeforeQuantity = 0;
-        cy.get('h3[class="gh-content-entry-title"]')
-            .then(($value) => {
-                pageBeforeQuantity = $value.length
+        cy.get('ol.gh-list')
+            .find('h3[class="gh-content-entry-title"]')
+            .then(listing => {
+                const listingCount = Cypress.$(listing).length;
+                pageBeforeQuantity = listingCount;
             });
         cy.wait(2000);
         cy.get('a.ember-view.permalink.gh-list-data.gh-post-list-title').first().click();

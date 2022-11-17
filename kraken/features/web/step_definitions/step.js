@@ -299,3 +299,19 @@ Then('Should have one less post', async function(){
 });
 
 // //end steps delete
+
+//Screenshots
+When('I take screenshot of step {string} scenario {string}', async function (step, scenario) {
+    var fs = require('fs');
+    let path_screenshots = './screenshots/'+scenario;
+    let path = path_screenshots + '/' + step + '.png';
+    if (!fs.existsSync(path_screenshots)){
+        fs.mkdirSync(path_screenshots);
+    }
+    return await this.driver.takeScreenshot().then(
+        function(image) {
+            fs.writeFileSync(path, image, 'base64');
+        }
+    );
+});
+//END Screenshots

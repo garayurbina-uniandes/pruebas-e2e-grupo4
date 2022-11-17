@@ -48,22 +48,22 @@ Para ejecutar las pruebas de Cypress, seguir los siguiente pasos
 * 11. Iniciar Sesión
 
 ## Escenarios
-| Nombre del escenario                                                                 | Funcionalidades           |
-|--------------------------------------------------------------------------------------|-------------------------|
-| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |
-| Como primer usuario registro mi cuenta en ghost                                      | Crear un Usuario        |
-| Como usuario registro una etiqueta en ghost con datos vacíos                         | Crear una Etiqueta      |
-| Como usuario registro una etiqueta externa en ghost con datos validos                | Crear una Etiqueta      |
-| Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |
-| Como usuario visualizo una etiqueta pública creada en ghost si existe al menos una   | Ver todas las Etiquetas |
-| Como usuario visualizo una etiqueta interna creada en ghost si existe al menos una   | Ver todas las Etiquetas |
-| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |
-| Como usuario elimino una etiqueta en ghost si existe al menos una                    | Eliminar una Etiqueta   |
-| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
-| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |
-| Como usuario agrego una imagen a una página y validar que se agrugue al formulario   | Agregar una imagen a una Página       |
-| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
-| Como usuario actualizo una entrada, actualizar su titulo, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
-| Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
-| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
-| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |
+|Id| Nombre del escenario                                                                 | Funcionalidades           |
+|---|--------------------------------------------------------------------------------------|-------------------------|
+|E01| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |
+|E02| Como primer usuario registro mi cuenta en ghost                                      | Crear un Usuario        |
+|E03| Como usuario registro una etiqueta en ghost con datos vacíos                         | Crear una Etiqueta      |
+|E04| Como usuario registro una etiqueta externa en ghost con datos validos                | Crear una Etiqueta      |
+|E05| Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |
+|E06| Como usuario visualizo una etiqueta pública creada en ghost si existe al menos una   | Ver todas las Etiquetas |
+|E07| Como usuario visualizo una etiqueta interna creada en ghost si existe al menos una   | Ver todas las Etiquetas |
+|E08| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |
+|E09| Como usuario elimino una etiqueta en ghost si existe al menos una                    | Eliminar una Etiqueta   |
+|E10| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
+|E11| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |
+|E12| Como usuario agrego una imagen a una página y validar que se agrugue al formulario   | Agregar una imagen a una Página       |
+|E13| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |
+|E14| Como usuario actualizo una entrada, actualizar su titulo, luego verifico que esté listada | Actualizar Entrada, Ver todas las Entradas |
+|E15| Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
+|E16| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
+|E17| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |

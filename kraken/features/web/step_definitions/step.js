@@ -34,17 +34,17 @@ When('I enter email {string}', async function (email) {
 });
 
 When('I enter password {string}', async function (password) {
-    let element = await this.driver.$('#ember10');
+    let element = await this.driver.$('input[name="password"]');
     return await element.setValue(password);
 });
 
 When('I click Sign in', async function () {
-    let element = await this.driver.$('#ember12');
+    let element = await this.driver.$('button[type="submit"]');
     return await element.click();
 })
 
 When('I register my user', async function () {
-    let element = await this.driver.$('#ember29');
+    let element = await this.driver.$('button[type="submit"]');
     return await element.click();
 })
 
@@ -66,6 +66,10 @@ When('I click on save tag', async function () {
     return await element.click();
 })
 
+When('I click on new save tag', async function () {
+    let element = await this.driver.$('span=Save');
+    return await element.click();
+})
 Then('I expect to not be able to create a tag', async function () {
     let elements = await this.driver.$$(".error");
     return await expect(elements.length).to.greaterThan(0);
@@ -88,6 +92,11 @@ Then('I expect to see internal tags', async function(){
 
 When('I click on existing tag', async function(){
     let element = await this.driver.$(".gh-list-row.gh-tags-list-item.ember-view")
+    return await element.click();
+})
+
+When('I click on new existing tag', async function(){
+    let element = await this.driver.$('a[title="Edit tag"]')
     return await element.click();
 })
 
@@ -303,7 +312,21 @@ Then('Should have one less post', async function(){
 //Screenshots
 When('I take screenshot of step {string} scenario {string}', async function (step, scenario) {
     var fs = require('fs');
-    let path_screenshots = './screenshots/'+scenario;
+    let path_screenshots = './screenshots/3.41.1/'+scenario;
+    let path = path_screenshots + '/' + step + '.png';
+    if (!fs.existsSync(path_screenshots)){
+        fs.mkdirSync(path_screenshots);
+    }
+    return await this.driver.takeScreenshot().then(
+        function(image) {
+            fs.writeFileSync(path, image, 'base64');
+        }
+    );
+});
+
+When('I take screenshot of new ghost step {string} scenario {string}', async function (step, scenario) {
+    var fs = require('fs');
+    let path_screenshots = './screenshots/4.44.0/'+scenario;
     let path = path_screenshots + '/' + step + '.png';
     if (!fs.existsSync(path_screenshots)){
         fs.mkdirSync(path_screenshots);

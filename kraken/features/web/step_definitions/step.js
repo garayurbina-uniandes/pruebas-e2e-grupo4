@@ -43,6 +43,11 @@ When('I click Sign in', async function () {
     return await element.click();
 })
 
+When('I click old Sign in', async function () {
+    let element = await this.driver.$('span=Create your account');
+    return await element.click();
+})
+
 When('I register my user', async function () {
     let element = await this.driver.$('button[type="submit"]');
     return await element.click();

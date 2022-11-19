@@ -4,7 +4,8 @@
 
 Para esta instalación se requiere tener el Ghost-CLI instalado en la máquina
 
-Abrir un terminal en la carpeta ghost
+Abrir un terminal en la carpeta ghost, si la carpeta no existe crearla ejecutando el siguiente comando en la raíz del proyecto
+* `mkdir ghost`
 
 Ejecutar el siguiente script ubicado en la carpeta raiz del proyecto:
 * `sh setup-ghost.sh`

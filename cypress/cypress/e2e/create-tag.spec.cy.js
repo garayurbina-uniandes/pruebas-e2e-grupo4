@@ -1,7 +1,7 @@
 
 describe('Testing Tag Creation with Invalid data on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E03';
+    const prefixPath = '3.41.1/E03';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -38,7 +38,7 @@ describe('Testing Tag Creation with Invalid data on Ghost', () => {
 
 describe('Testing Public Tag Creation with valid data on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E04';
+    const prefixPath = '3.41.1/E04';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -74,7 +74,7 @@ describe('Testing Public Tag Creation with valid data on Ghost', () => {
 
 describe('Testing Internal Tag Creation with valid data on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E05';
+    const prefixPath = '3.41.1/E05';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

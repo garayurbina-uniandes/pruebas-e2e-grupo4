@@ -1,13 +1,11 @@
 describe('Testing Register on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = '3.41.1/E02';
+    const prefixPath = '4.44.0/E02';
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:3002/ghost/#/signin')
     })
     it('Register', () => {
-        cy.get('#ember12').click();
-        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
-        cy.wait(1000);
+        cy.wait(2000);
         cy.get('#blog-title').type('titulo');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(1000);
@@ -20,7 +18,7 @@ describe('Testing Register on Ghost', () => {
         cy.get('#password').type('GhAuthorEx1*');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(1000);
-        cy.get('#ember29').click(); //Register user
+        cy.get('button[type="submit"]').click(); //Register user
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
     })
 });

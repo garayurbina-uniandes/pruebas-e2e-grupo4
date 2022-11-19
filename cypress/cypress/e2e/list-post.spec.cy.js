@@ -1,6 +1,6 @@
 describe('Como usuario entro al listado de entradas y filtro por publicadas y por autor', () => {
     let imageSequence = 1;
-    const prefixPath = 'E17';
+    const prefixPath = '3.41.1/E17';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

@@ -1,6 +1,6 @@
 describe('Testing Public Tag View on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E06';
+    const prefixPath = '3.41.1/E06';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -34,7 +34,7 @@ describe('Testing Public Tag View on Ghost', () => {
 
 describe('Testing Filter Internal Tags on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E08';
+    const prefixPath = '3.41.1/E08';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -68,7 +68,7 @@ describe('Testing Filter Internal Tags on Ghost', () => {
 
 describe('Testing Internal Tag View on Ghost', () => {
     let imageSequence = 1;
-    const prefixPath = 'E07';
+    const prefixPath = '3.41.1/E07';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

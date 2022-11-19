@@ -1,6 +1,6 @@
 describe('Como usuario agrego una imagen a una página y validar que se agrugue al formulario', () => {
     let imageSequence = 1;
-    const prefixPath = 'E12';
+    const prefixPath = '3.41.1/E12';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

@@ -1,6 +1,6 @@
 describe('Como usuario actualizo una entrada y luego verifico que esté listada', () => {
     let imageSequence = 1;
-    const prefixPath = 'E10';
+    const prefixPath = '3.41.1/E14';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

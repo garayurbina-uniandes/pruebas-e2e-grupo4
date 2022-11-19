@@ -1,6 +1,6 @@
 describe('Como usuario elimino una página y validar que se ya no este en el listado de páginas', () => {
     let imageSequence = 1;
-    const prefixPath = 'E11';
+    const prefixPath = '3.41.1/E11';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

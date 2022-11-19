@@ -1,6 +1,6 @@
 describe('Como usuario elimino una entrada, luego verifio que ya no esté listada', () => {
     let imageSequence = 1;
-    const prefixPath = 'E16';
+    const prefixPath = '3.41.1/E16';
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

@@ -1,14 +1,14 @@
 describe('Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada', () => {
     let imageSequence = 1;
-    const prefixPath = '3.41.1/E13';
+    const prefixPath = '4.44.0/E13';
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:3002/ghost/#/signin')
     })
     it('Login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
-            cy.get('button.login.gh-btn.gh-btn-blue.gh-btn-block.gh-btn-icon.ember-view').click()
+            cy.get('button[type="submit"]').click()
         });
     })
 
@@ -26,7 +26,7 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
             .then(($value) => {
                 postsBeforeCreate = $value.length
             });
-        cy.get('a.ember-view.gh-btn.gh-btn-green').click();
+        cy.get('a[href="#/editor/post/"]').first().click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type('Kraken Test 4')
@@ -41,10 +41,13 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
         cy.get('.gh-publishmenu-button').click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
+        cy.get('button.gh-btn.gh-btn-black.gh-btn-icon.ember-view').click();
+        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        cy.wait(2000);
         cy.get('article.gh-notification.gh-notification-passive.ember-view').should('be.visible');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
-        cy.get('a.blue.link.fw4.flex.items-center.ember-view').click();
+        cy.get('a[href="#/posts/"]').first().click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
@@ -57,15 +60,15 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
 
 describe('Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada', () => {
     let imageSequence = 1;
-    const prefixPath = '3.41.1/E15';
+    const prefixPath = '4.44.0/E15';
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:3002/ghost/#/signin')
     })
     it('Login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
-            cy.get('button.login.gh-btn.gh-btn-blue.gh-btn-block.gh-btn-icon.ember-view').click()
+            cy.get('button[type="submit"]').click()
         });
     })
 
@@ -83,7 +86,7 @@ describe('Como usuario creo una entrada, la programo para publicación en 5 minu
             .then(($value) => {
                 postsBeforeCreate = $value.length
             });
-        cy.get('a.ember-view.gh-btn.gh-btn-green').click();
+        cy.get('a[href="#/editor/post/"]').first().click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type('Kraken Test 5')
@@ -101,10 +104,13 @@ describe('Como usuario creo una entrada, la programo para publicación en 5 minu
         cy.get('button.gh-publishmenu-button').click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
+        cy.get('button.gh-btn.gh-btn-black.gh-btn-icon.ember-view').click();
+        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        cy.wait(2000);
         cy.get('article.gh-notification.gh-notification-passive.ember-view').should('be.visible');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
-        cy.get('a.blue.link.fw4.flex.items-center.ember-view').click();
+        cy.get('a[href="#/posts/"]').first().click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});

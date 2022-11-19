@@ -2,6 +2,19 @@
 
 ## Instalar aplicación sobre pruebas
 
+### Opción 1 de Instalación
+
+Para esta instalación se requiere tener Docker instalado
+
+Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.41.1 y versión 4.44.0
+
+* Ghost 3.41.1
+* `docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1`
+* Ghost 4.44.0
+* `docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0`
+
+### Opción 2 de Instalación
+
 Para esta instalación se requiere tener el Ghost-CLI instalado en la máquina
 
 Abrir un terminal en la carpeta ghost, si la carpeta no existe crearla ejecutando el siguiente comando en la raíz del proyecto

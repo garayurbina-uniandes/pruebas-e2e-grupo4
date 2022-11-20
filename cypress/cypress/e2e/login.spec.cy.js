@@ -13,5 +13,9 @@ describe('Testing Login on Ghost', () => {
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        cy.get('a[href="#/posts/"]') //Expect have posts option
+            .then($value => {
+                expect($value.length).to.be.greaterThan(0)
+            })
     })
 });

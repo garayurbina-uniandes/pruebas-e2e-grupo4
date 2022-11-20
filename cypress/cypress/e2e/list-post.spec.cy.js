@@ -33,6 +33,18 @@ describe('Como usuario entro al listado de entradas y filtro por publicadas y po
         cy.get('li[data-option-index="1"]').click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(1000);
+        let postList = 0;
+        let elementToTest = '.gh-content-entry-title';
+        cy.document().then(($document) => { //Check if Element exists
+            const documentResult = $document.querySelectorAll(elementToTest)
+            if (documentResult.length) {
+                cy.get('.gh-content-entry-title')
+                    .then(($value) => {
+                        postList = $value.length
+                    });
+            }
+        })
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        expect(postList).to.equal(0);
     })
 });

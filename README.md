@@ -50,7 +50,7 @@ docker rm ghost_4.44.0
 docker stop ghost_3.41.1
 docker rm ghost_3.41.1
 ```
-Finalmente volver a ejecutar los comandos "docker run" especificados en la sección "Instalar Aplicación sobre pruebas"
+Finalmente volver a ejecutar los comandos especificados en la sección "Instalar Aplicación sobre pruebas"
 
 ### Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 
@@ -111,7 +111,25 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 * 10. Agregar una imagen a una Página
 * 11. Iniciar Sesión
 
-## Escenarios
+## Escenarios Semana 6
+|Id| Nombre del escenario                                                                 | Funcionalidades           | API de pruebas|
+|---|--------------------------------------------------------------------------------------|-------------------------|----------------|
+|E01| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |Kraken y Cypress |
+|E02| Como primer usuario registro mi cuenta en ghost                                      | Crear un Usuario        |Kraken y Cypress |
+|E03| Como usuario registro una etiqueta en ghost con datos vacíos                         | Crear una Etiqueta      |Kraken |
+|E04| Como usuario registro una etiqueta externa en ghost con datos validos                | Crear una Etiqueta      |Kraken |
+|E05| Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |Kraken |
+|E06| Como usuario visualizo una etiqueta pública creada en ghost si existe al menos una   | Ver todas las Etiquetas |Kraken |
+|E08| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |Kraken |
+|E10| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |Cypress |
+|E11| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |Cypress |
+|E13| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |Cypress |
+|E15| Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |Cypress |
+|E17| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas | Cypress |
+
+
+
+## Escenarios Semana 5
 |Id| Nombre del escenario                                                                 | Funcionalidades           |
 |---|--------------------------------------------------------------------------------------|-------------------------|
 |E01| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |

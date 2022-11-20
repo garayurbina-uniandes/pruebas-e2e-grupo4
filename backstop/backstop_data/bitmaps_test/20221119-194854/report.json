@@ -1,0 +1,33 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_F181_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-194854/TestTeam4_Kraken_F181_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_F181_0_document_0_Computer.png",
+        "label": "Kraken_F18.1",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/1.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/1.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 6.1414583333333335,
+          "misMatchPercentage": "6.14",
+          "analysisTime": 31
+        },
+        "diffImage": "../bitmaps_test/20221119-194854/failed_diff_TestTeam4_Kraken_F181_0_document_0_Computer.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "Test Team 4"
+}

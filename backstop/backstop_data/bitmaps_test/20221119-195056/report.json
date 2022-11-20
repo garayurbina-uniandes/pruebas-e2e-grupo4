@@ -1,0 +1,140 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-195056/TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
+        "label": "Kraken_E01_Img1",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/1.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/1.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 6.1414583333333335,
+          "misMatchPercentage": "6.14",
+          "analysisTime": 46
+        },
+        "diffImage": "../bitmaps_test/20221119-195056/failed_diff_TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-195056/TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
+        "label": "Kraken_E01_Img2",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/2.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/2.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 6.344374999999999,
+          "misMatchPercentage": "6.34",
+          "analysisTime": 33
+        },
+        "diffImage": "../bitmaps_test/20221119-195056/failed_diff_TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-195056/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "label": "Kraken_E01_Img3",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/3.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/3.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 46.420208333333335,
+          "misMatchPercentage": "46.42",
+          "analysisTime": 38
+        },
+        "diffImage": "../bitmaps_test/20221119-195056/failed_diff_TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-195056/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "label": "Kraken_E01_Img3",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/4.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/4.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 46.420208333333335,
+          "misMatchPercentage": "46.42",
+          "analysisTime": 34
+        },
+        "diffImage": "../bitmaps_test/20221119-195056/failed_diff_TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221119-195056/TestTeam4_Kraken_E01_Img5_0_document_0_Computer.png",
+        "selector": "document",
+        "fileName": "TestTeam4_Kraken_E01_Img5_0_document_0_Computer.png",
+        "label": "Kraken_E01_Img5",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/5.png?raw=true",
+        "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/5.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "Computer",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.016609364359625955,
+          "misMatchPercentage": "0.02",
+          "analysisTime": 34
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "Test Team 4"
+}

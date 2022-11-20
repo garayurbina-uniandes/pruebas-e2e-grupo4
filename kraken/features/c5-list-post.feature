@@ -23,4 +23,4 @@ Feature: Ver todas las entradas
                 And I take screenshot of step "8" scenario "E17"
                 When I press a button with id 'li[data-option-index="1"]'
                 And I wait for 5 seconds
-                And I take screenshot of step "9" scenario "E17"
+                Then I take screenshot of step "9" scenario "E17"

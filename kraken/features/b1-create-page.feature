@@ -2,7 +2,7 @@ Feature: Crear una página con exito
 
 @user1 @web
 Scenario: Como usuario creo una página y validar que se agruegue al listado de páginas
-And I navigate to page "http://localhost:2368/ghost/#/signin"
+Given I navigate to page "http://localhost:2368/ghost/#/signin"
 When I enter email "a@a.com"
 And I wait for 2 seconds
 And I take screenshot of step "1" scenario "E10"

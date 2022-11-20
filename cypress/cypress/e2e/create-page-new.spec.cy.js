@@ -1,6 +1,6 @@
 describe('Como usuario creo una página y validar que se agruegue al listado de páginas', () => {
     let imageSequence = 1;
-    const prefixPath = 'v4.44.0/E10';
+    const prefixPath = '4.44.0/E10';
     before(() => {
         cy.visit('http://localhost:3002/ghost/#/signin')
     })

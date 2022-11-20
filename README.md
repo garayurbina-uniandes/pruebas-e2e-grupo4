@@ -19,7 +19,7 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
 
 ## Ejecución de pruebas
 
-### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos
+### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 
 1. Entrar a la carpeta de Kraken, desde la raiz del proyecto:
   ```bash
@@ -35,7 +35,7 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
   ```
 4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
 
-### Para ejecutar las pruebas de Cypress, seguir los siguiente pasos
+### Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 
 1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
   ```bash

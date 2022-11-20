@@ -69,6 +69,10 @@ describe('Testing Public Tag Creation with valid data on Ghost', () => {
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.gh-btn-green.ember-view')
+            .then($value => {
+                expect($value.length).to.be.greaterThan(0);
+            })
     })
 });
 
@@ -105,5 +109,9 @@ describe('Testing Internal Tag Creation with valid data on Ghost', () => {
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
+        cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.gh-btn-green.ember-view')
+            .then($value => {
+                expect($value.length).to.be.greaterThan(0);
+            })
     })
 });

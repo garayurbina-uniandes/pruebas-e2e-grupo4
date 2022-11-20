@@ -5,6 +5,7 @@ describe('Testing Register on Ghost', () => {
         cy.visit('http://localhost:3002/ghost/#/signin')
     })
     it('Register', () => {
+        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.get('#blog-title').type('titulo');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});

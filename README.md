@@ -53,7 +53,7 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
 
 ### Reporte BackstopJS
 
-A continuación se presentan las instrucciones para ejecutar el reporte generado por BackstopJS para comparación entre la versión 3.41.1 y 4.44.0 de Ghost para las funcionalidades E01, E02, E03, E04, E05, E06 y E08
+A continuación se presentan las instrucciones para ejecutar el reporte generado por BackstopJS para comparación entre la versión 3.41.1 y 4.44.0 de Ghost para los escenarios E01, E02, E03, E04, E05, E06 y E08 (Kraken) y los escenarios E01, E02, E10, E11, E13, E15 y E17 (Cypress)
 
 1. Ir a la carpeta de BackstopJS
   ```bash

@@ -1,15 +1,15 @@
-report({
+{
   "testSuite": "BackstopJS",
   "tests": [
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png",
         "label": "Kraken_E01_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/1.png?raw=true",
         "expect": 0,
@@ -22,21 +22,20 @@ report({
           },
           "rawMisMatchPercentage": 6.1414583333333335,
           "misMatchPercentage": "6.14",
-          "analysisTime": 107
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E01_Img1_0_document_0_Computer.png"
+          "analysisTime": 70
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png",
         "label": "Kraken_E01_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/2.png?raw=true",
         "expect": 0,
@@ -49,21 +48,20 @@ report({
           },
           "rawMisMatchPercentage": 6.344374999999999,
           "misMatchPercentage": "6.34",
-          "analysisTime": 66
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E01_Img2_0_document_0_Computer.png"
+          "analysisTime": 69
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png",
         "label": "Kraken_E01_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/3.png?raw=true",
         "expect": 0,
@@ -76,21 +74,20 @@ report({
           },
           "rawMisMatchPercentage": 6.21875,
           "misMatchPercentage": "6.22",
-          "analysisTime": 131
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E01_Img3_0_document_0_Computer.png"
+          "analysisTime": 63
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png",
         "label": "Kraken_E01_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E01/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E01/4.png?raw=true",
         "expect": 0,
@@ -103,21 +100,21 @@ report({
           },
           "rawMisMatchPercentage": 46.420208333333335,
           "misMatchPercentage": "46.42",
-          "analysisTime": 103
+          "analysisTime": 58
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E01_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png",
         "label": "Kraken_E02_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/1.png?raw=true",
         "expect": 0,
@@ -130,21 +127,21 @@ report({
           },
           "rawMisMatchPercentage": 7.403958333333334,
           "misMatchPercentage": "7.40",
-          "analysisTime": 104
+          "analysisTime": 81
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img1_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png",
         "label": "Kraken_E02_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/2.png?raw=true",
         "expect": 0,
@@ -157,21 +154,21 @@ report({
           },
           "rawMisMatchPercentage": 7.4418750000000005,
           "misMatchPercentage": "7.44",
-          "analysisTime": 171
+          "analysisTime": 102
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img2_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png",
         "label": "Kraken_E02_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/3.png?raw=true",
         "expect": 0,
@@ -184,21 +181,21 @@ report({
           },
           "rawMisMatchPercentage": 7.811041666666667,
           "misMatchPercentage": "7.81",
-          "analysisTime": 175
+          "analysisTime": 90
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img3_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png",
         "label": "Kraken_E02_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/4.png?raw=true",
         "expect": 0,
@@ -213,19 +210,19 @@ report({
           "misMatchPercentage": "7.75",
           "analysisTime": 72
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png",
         "label": "Kraken_E02_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/5.png?raw=true",
         "expect": 0,
@@ -238,21 +235,21 @@ report({
           },
           "rawMisMatchPercentage": 7.609166666666667,
           "misMatchPercentage": "7.61",
-          "analysisTime": 123
+          "analysisTime": 95
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img5_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png",
         "label": "Kraken_E02_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/6.png?raw=true",
         "expect": 0,
@@ -265,21 +262,21 @@ report({
           },
           "rawMisMatchPercentage": 7.720625,
           "misMatchPercentage": "7.72",
-          "analysisTime": 109
+          "analysisTime": 85
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img6_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png",
         "label": "Kraken_E02_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E02/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E02/7.png?raw=true",
         "expect": 0,
@@ -292,21 +289,21 @@ report({
           },
           "rawMisMatchPercentage": 40.4125,
           "misMatchPercentage": "40.41",
-          "analysisTime": 51
+          "analysisTime": 125
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E02_Img7_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img1_0_document_0_Computer.png",
         "label": "Kraken_E03_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/1.png?raw=true",
         "expect": 0,
@@ -319,21 +316,20 @@ report({
           },
           "rawMisMatchPercentage": 6.1414583333333335,
           "misMatchPercentage": "6.14",
-          "analysisTime": 134
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img1_0_document_0_Computer.png"
+          "analysisTime": 62
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img2_0_document_0_Computer.png",
         "label": "Kraken_E03_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/2.png?raw=true",
         "expect": 0,
@@ -346,21 +342,20 @@ report({
           },
           "rawMisMatchPercentage": 6.338958333333333,
           "misMatchPercentage": "6.34",
-          "analysisTime": 129
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img2_0_document_0_Computer.png"
+          "analysisTime": 109
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img3_0_document_0_Computer.png",
         "label": "Kraken_E03_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/3.png?raw=true",
         "expect": 0,
@@ -373,21 +368,20 @@ report({
           },
           "rawMisMatchPercentage": 6.21,
           "misMatchPercentage": "6.21",
-          "analysisTime": 197
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img3_0_document_0_Computer.png"
+          "analysisTime": 88
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png",
         "label": "Kraken_E03_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/4.png?raw=true",
         "expect": 0,
@@ -400,21 +394,21 @@ report({
           },
           "rawMisMatchPercentage": 42.254999999999995,
           "misMatchPercentage": "42.25",
-          "analysisTime": 60
+          "analysisTime": 102
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E03_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img5_0_document_0_Computer.png",
         "label": "Kraken_E03_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/5.png?raw=true",
         "expect": 0,
@@ -427,7 +421,7 @@ report({
           },
           "rawMisMatchPercentage": 5.248333333333333,
           "misMatchPercentage": "5.25",
-          "analysisTime": 89
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -435,12 +429,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img6_0_document_0_Computer.png",
         "label": "Kraken_E03_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/6.png?raw=true",
         "expect": 0,
@@ -453,21 +447,20 @@ report({
           },
           "rawMisMatchPercentage": 6.411875,
           "misMatchPercentage": "6.41",
-          "analysisTime": 63
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img6_0_document_0_Computer.png"
+          "analysisTime": 91
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img7_0_document_0_Computer.png",
         "label": "Kraken_E03_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/7.png?raw=true",
         "expect": 0,
@@ -480,21 +473,20 @@ report({
           },
           "rawMisMatchPercentage": 6.688125,
           "misMatchPercentage": "6.69",
-          "analysisTime": 239
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img7_0_document_0_Computer.png"
+          "analysisTime": 132
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E03_Img8_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E03_Img8_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E03_Img8_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E03_Img8_0_document_0_Computer.png",
         "label": "Kraken_E03_Img8",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E03/8.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E03/8.png?raw=true",
         "expect": 0,
@@ -507,21 +499,20 @@ report({
           },
           "rawMisMatchPercentage": 6.662083333333333,
           "misMatchPercentage": "6.66",
-          "analysisTime": 138
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E03_Img8_0_document_0_Computer.png"
+          "analysisTime": 59
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img1_0_document_0_Computer.png",
         "label": "Kraken_E04_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/1.png?raw=true",
         "expect": 0,
@@ -534,7 +525,7 @@ report({
           },
           "rawMisMatchPercentage": 5.975,
           "misMatchPercentage": "5.97",
-          "analysisTime": 199
+          "analysisTime": 74
         }
       },
       "status": "pass"
@@ -542,12 +533,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img2_0_document_0_Computer.png",
         "label": "Kraken_E04_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/2.png?raw=true",
         "expect": 0,
@@ -560,21 +551,20 @@ report({
           },
           "rawMisMatchPercentage": 6.095625,
           "misMatchPercentage": "6.10",
-          "analysisTime": 77
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E04_Img2_0_document_0_Computer.png"
+          "analysisTime": 70
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img3_0_document_0_Computer.png",
         "label": "Kraken_E04_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/3.png?raw=true",
         "expect": 0,
@@ -587,21 +577,20 @@ report({
           },
           "rawMisMatchPercentage": 6.093958333333333,
           "misMatchPercentage": "6.09",
-          "analysisTime": 118
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E04_Img3_0_document_0_Computer.png"
+          "analysisTime": 91
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png",
         "label": "Kraken_E04_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/4.png?raw=true",
         "expect": 0,
@@ -614,21 +603,21 @@ report({
           },
           "rawMisMatchPercentage": 42.1575,
           "misMatchPercentage": "42.16",
-          "analysisTime": 66
+          "analysisTime": 102
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E04_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img5_0_document_0_Computer.png",
         "label": "Kraken_E04_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/5.png?raw=true",
         "expect": 0,
@@ -641,7 +630,7 @@ report({
           },
           "rawMisMatchPercentage": 4.675,
           "misMatchPercentage": "4.67",
-          "analysisTime": 130
+          "analysisTime": 82
         }
       },
       "status": "pass"
@@ -649,12 +638,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img6_0_document_0_Computer.png",
         "label": "Kraken_E04_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/6.png?raw=true",
         "expect": 0,
@@ -667,7 +656,7 @@ report({
           },
           "rawMisMatchPercentage": 5.733333333333333,
           "misMatchPercentage": "5.73",
-          "analysisTime": 78
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -675,12 +664,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img7_0_document_0_Computer.png",
         "label": "Kraken_E04_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/7.png?raw=true",
         "expect": 0,
@@ -693,21 +682,20 @@ report({
           },
           "rawMisMatchPercentage": 6.050416666666666,
           "misMatchPercentage": "6.05",
-          "analysisTime": 104
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E04_Img7_0_document_0_Computer.png"
+          "analysisTime": 51
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E04_Img8_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E04_Img8_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E04_Img8_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E04_Img8_0_document_0_Computer.png",
         "label": "Kraken_E04_Img8",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E04/8.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E04/8.png?raw=true",
         "expect": 0,
@@ -720,21 +708,20 @@ report({
           },
           "rawMisMatchPercentage": 6.034791666666667,
           "misMatchPercentage": "6.03",
-          "analysisTime": 208
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E04_Img8_0_document_0_Computer.png"
+          "analysisTime": 59
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img1_0_document_0_Computer.png",
         "label": "Kraken_E05_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/1.png?raw=true",
         "expect": 0,
@@ -747,7 +734,7 @@ report({
           },
           "rawMisMatchPercentage": 5.97375,
           "misMatchPercentage": "5.97",
-          "analysisTime": 132
+          "analysisTime": 62
         }
       },
       "status": "pass"
@@ -755,12 +742,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img2_0_document_0_Computer.png",
         "label": "Kraken_E05_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/2.png?raw=true",
         "expect": 0,
@@ -773,21 +760,20 @@ report({
           },
           "rawMisMatchPercentage": 6.064791666666667,
           "misMatchPercentage": "6.06",
-          "analysisTime": 195
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img2_0_document_0_Computer.png"
+          "analysisTime": 138
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img3_0_document_0_Computer.png",
         "label": "Kraken_E05_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/3.png?raw=true",
         "expect": 0,
@@ -800,21 +786,20 @@ report({
           },
           "rawMisMatchPercentage": 6.042916666666667,
           "misMatchPercentage": "6.04",
-          "analysisTime": 125
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img3_0_document_0_Computer.png"
+          "analysisTime": 89
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png",
         "label": "Kraken_E05_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/4.png?raw=true",
         "expect": 0,
@@ -827,21 +812,21 @@ report({
           },
           "rawMisMatchPercentage": 42.028749999999995,
           "misMatchPercentage": "42.03",
-          "analysisTime": 121
+          "analysisTime": 50
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E05_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img5_0_document_0_Computer.png",
         "label": "Kraken_E05_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/5.png?raw=true",
         "expect": 0,
@@ -854,7 +839,7 @@ report({
           },
           "rawMisMatchPercentage": 5.225833333333333,
           "misMatchPercentage": "5.23",
-          "analysisTime": 95
+          "analysisTime": 68
         }
       },
       "status": "pass"
@@ -862,12 +847,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img6_0_document_0_Computer.png",
         "label": "Kraken_E05_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/6.png?raw=true",
         "expect": 0,
@@ -880,21 +865,20 @@ report({
           },
           "rawMisMatchPercentage": 6.301458333333334,
           "misMatchPercentage": "6.30",
-          "analysisTime": 78
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img6_0_document_0_Computer.png"
+          "analysisTime": 55
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img7_0_document_0_Computer.png",
         "label": "Kraken_E05_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/7.png?raw=true",
         "expect": 0,
@@ -907,21 +891,20 @@ report({
           },
           "rawMisMatchPercentage": 6.595833333333332,
           "misMatchPercentage": "6.60",
-          "analysisTime": 73
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img7_0_document_0_Computer.png"
+          "analysisTime": 64
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E05_Img8_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E05_Img8_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E05_Img8_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E05_Img8_0_document_0_Computer.png",
         "label": "Kraken_E05_Img8",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E05/8.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E05/8.png?raw=true",
         "expect": 0,
@@ -934,21 +917,20 @@ report({
           },
           "rawMisMatchPercentage": 6.604166666666666,
           "misMatchPercentage": "6.60",
-          "analysisTime": 50
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E05_Img8_0_document_0_Computer.png"
+          "analysisTime": 105
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img1_0_document_0_Computer.png",
         "label": "Kraken_E06_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/1.png?raw=true",
         "expect": 0,
@@ -961,21 +943,20 @@ report({
           },
           "rawMisMatchPercentage": 6.112916666666666,
           "misMatchPercentage": "6.11",
-          "analysisTime": 78
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E06_Img1_0_document_0_Computer.png"
+          "analysisTime": 69
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img2_0_document_0_Computer.png",
         "label": "Kraken_E06_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/2.png?raw=true",
         "expect": 0,
@@ -988,21 +969,20 @@ report({
           },
           "rawMisMatchPercentage": 6.2175,
           "misMatchPercentage": "6.22",
-          "analysisTime": 99
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E06_Img2_0_document_0_Computer.png"
+          "analysisTime": 188
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img3_0_document_0_Computer.png",
         "label": "Kraken_E06_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/3.png?raw=true",
         "expect": 0,
@@ -1015,21 +995,20 @@ report({
           },
           "rawMisMatchPercentage": 6.223958333333333,
           "misMatchPercentage": "6.22",
-          "analysisTime": 74
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E06_Img3_0_document_0_Computer.png"
+          "analysisTime": 81
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png",
         "label": "Kraken_E06_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/4.png?raw=true",
         "expect": 0,
@@ -1042,21 +1021,21 @@ report({
           },
           "rawMisMatchPercentage": 42.22125,
           "misMatchPercentage": "42.22",
-          "analysisTime": 95
+          "analysisTime": 47
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E06_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img5_0_document_0_Computer.png",
         "label": "Kraken_E06_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/5.png?raw=true",
         "expect": 0,
@@ -1069,7 +1048,7 @@ report({
           },
           "rawMisMatchPercentage": 4.689375,
           "misMatchPercentage": "4.69",
-          "analysisTime": 62
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -1077,12 +1056,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img6_0_document_0_Computer.png",
         "label": "Kraken_E06_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/6.png?raw=true",
         "expect": 0,
@@ -1095,7 +1074,7 @@ report({
           },
           "rawMisMatchPercentage": 6.000416666666666,
           "misMatchPercentage": "6.00",
-          "analysisTime": 53
+          "analysisTime": 86
         }
       },
       "status": "pass"
@@ -1103,12 +1082,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E06_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E06_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E06_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E06_Img7_0_document_0_Computer.png",
         "label": "Kraken_E06_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E06/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E06/7.png?raw=true",
         "expect": 0,
@@ -1121,21 +1100,20 @@ report({
           },
           "rawMisMatchPercentage": 6.250208333333333,
           "misMatchPercentage": "6.25",
-          "analysisTime": 60
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E06_Img7_0_document_0_Computer.png"
+          "analysisTime": 59
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img1_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img1_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img1_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img1_0_document_0_Computer.png",
         "label": "Kraken_E08_Img1",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/1.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/1.png?raw=true",
         "expect": 0,
@@ -1148,21 +1126,20 @@ report({
           },
           "rawMisMatchPercentage": 6.956041666666667,
           "misMatchPercentage": "6.96",
-          "analysisTime": 54
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E08_Img1_0_document_0_Computer.png"
+          "analysisTime": 50
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img2_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img2_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img2_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img2_0_document_0_Computer.png",
         "label": "Kraken_E08_Img2",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/2.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/2.png?raw=true",
         "expect": 0,
@@ -1175,21 +1152,20 @@ report({
           },
           "rawMisMatchPercentage": 6.5581249999999995,
           "misMatchPercentage": "6.56",
-          "analysisTime": 48
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E08_Img2_0_document_0_Computer.png"
+          "analysisTime": 58
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img3_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img3_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img3_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img3_0_document_0_Computer.png",
         "label": "Kraken_E08_Img3",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/3.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/3.png?raw=true",
         "expect": 0,
@@ -1202,21 +1178,20 @@ report({
           },
           "rawMisMatchPercentage": 6.516249999999999,
           "misMatchPercentage": "6.52",
-          "analysisTime": 60
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E08_Img3_0_document_0_Computer.png"
+          "analysisTime": 38
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png",
         "label": "Kraken_E08_Img4",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/4.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/4.png?raw=true",
         "expect": 0,
@@ -1229,21 +1204,21 @@ report({
           },
           "rawMisMatchPercentage": 42.400625,
           "misMatchPercentage": "42.40",
-          "analysisTime": 33
+          "analysisTime": 35
         },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png"
+        "diffImage": "../bitmaps_test/20221120-101124/failed_diff_TestTeam4_Kraken_E08_Img4_0_document_0_Computer.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img5_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img5_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img5_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img5_0_document_0_Computer.png",
         "label": "Kraken_E08_Img5",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/5.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/5.png?raw=true",
         "expect": 0,
@@ -1256,21 +1231,20 @@ report({
           },
           "rawMisMatchPercentage": 6.083541666666667,
           "misMatchPercentage": "6.08",
-          "analysisTime": 44
-        },
-        "diffImage": "../bitmaps_test/20221120-101156/failed_diff_TestTeam4_Kraken_E08_Img5_0_document_0_Computer.png"
+          "analysisTime": 46
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img6_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img6_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img6_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img6_0_document_0_Computer.png",
         "label": "Kraken_E08_Img6",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/6.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/6.png?raw=true",
         "expect": 0,
@@ -1283,7 +1257,7 @@ report({
           },
           "rawMisMatchPercentage": 5.761458333333333,
           "misMatchPercentage": "5.76",
-          "analysisTime": 43
+          "analysisTime": 32
         }
       },
       "status": "pass"
@@ -1291,12 +1265,12 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/TestTeam4_Kraken_E08_Img7_0_document_0_Computer.png",
-        "test": "../bitmaps_test/20221120-101156/TestTeam4_Kraken_E08_Img7_0_document_0_Computer.png",
+        "test": "../bitmaps_test/20221120-101124/TestTeam4_Kraken_E08_Img7_0_document_0_Computer.png",
         "selector": "document",
         "fileName": "TestTeam4_Kraken_E08_Img7_0_document_0_Computer.png",
         "label": "Kraken_E08_Img7",
         "requireSameDimensions": true,
-        "misMatchThreshold": 6,
+        "misMatchThreshold": 7,
         "url": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/3.41.1/E08/7.png?raw=true",
         "referenceUrl": "https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/kraken/screenshots/4.44.0/E08/7.png?raw=true",
         "expect": 0,
@@ -1309,11 +1283,11 @@ report({
           },
           "rawMisMatchPercentage": 5.761458333333333,
           "misMatchPercentage": "5.76",
-          "analysisTime": 31
+          "analysisTime": 35
         }
       },
       "status": "pass"
     }
   ],
   "id": "Test Team 4"
-});
+}

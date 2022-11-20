@@ -21,6 +21,11 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
 
 ### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 
+#### Requisitos
+
+* Instalación nueva de Ghost versión 3.41.1 accesible desde el puerto 2368.
+* Instalación nueva de Ghost versión 4.44.0 accesible desde el puerto 3002.
+
 1. Entrar a la carpeta de Kraken, desde la raiz del proyecto:
   ```bash
   cd kraken
@@ -33,9 +38,26 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
   ```bash
   npm test
   ```
-4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en las versiones 3.41.1 y 4.44.0 de ghost utilizada
+
+5. Para refrescar la instalación de Ghost, debemos detener y eliminar los contenedores con los siguientes comandos
+```bash
+docker stop ghost_4.44.0
+docker rm ghost_4.44.0
+```
+
+```bash
+docker stop ghost_3.41.1
+docker rm ghost_3.41.1
+```
+Finalmente volver a ejecutar los comandos "docker run" especificados en la sección "Instalar Aplicación sobre pruebas"
 
 ### Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
+
+#### Requisitos
+
+* Instalación nueva de Ghost versión 3.41.1 accesible desde el puerto 2368.
+* Instalación nueva de Ghost versión 4.44.0 accesible desde el puerto 3002.
 
 1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
   ```bash

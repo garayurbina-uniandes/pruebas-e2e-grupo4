@@ -42,7 +42,6 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.get('button.gh-btn.gh-btn-black.gh-btn-icon.ember-view').click();
-        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.wait(2000);
         cy.get('article.gh-notification.gh-notification-passive.ember-view').should('be.visible');
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});

@@ -13,24 +13,6 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
 * Ghost 4.44.0
 * `docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0`
 
-### Opción 2 de Instalación
-
-Para esta instalación se requiere tener el Ghost-CLI instalado en la máquina
-
-Abrir un terminal en la carpeta ghost, si la carpeta no existe crearla ejecutando el siguiente comando en la raíz del proyecto
-* `mkdir ghost`
-
-Ejecutar el siguiente script ubicado en la carpeta raiz del proyecto:
-* `sh setup-ghost.sh`
-
-Si se muestra un error relacionado con sqlite3 ejecutar
-* `npm install sqlite3 --save`
-
-Si ghost no se inicia automáticamente ejecutar
-* `ghost start`
-
-Luego de ejecutar el script, ghost empezará a ejecutar en el puerto `2368` del localhost. Asegurese que este puerto no esté ocupado.
-
 ## Ejecución de pruebas
 
 Para ejecutar las pruebas de Kraken, seguir los siguiente pasos

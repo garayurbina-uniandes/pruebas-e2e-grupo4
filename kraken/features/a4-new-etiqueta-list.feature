@@ -2,8 +2,8 @@ Feature: Listar etiquetas
 
 @user1 @web
 Scenario: Como usuario visualizo etiquetas internas en ghost
-When I navigate to page "http://localhost:3002/ghost/#/signin"
-And I wait for 1 seconds
+Given I navigate to page "http://localhost:3002/ghost/#/signin"
+When I wait for 1 seconds
 And I take screenshot of new ghost step "1" scenario "E08"
 And I enter email "a@a.com"
 And I wait for 1 seconds

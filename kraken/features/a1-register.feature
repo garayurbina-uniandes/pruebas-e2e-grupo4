@@ -5,7 +5,7 @@ Feature: Registrar usuario
 Scenario: Como primer usuario registro mi cuenta en ghost
 
 Given I navigate to page "http://localhost:2368/ghost/#/setup/one"
-And I wait for 5 seconds
+When I wait for 5 seconds
 And I take screenshot of step "1" scenario "E02"
 And I click old Sign in
 And I wait for 2 seconds
@@ -24,4 +24,4 @@ And I wait for 2 seconds
 And I take screenshot of step "6" scenario "E02"
 And I register my user
 And I wait for 2 seconds
-And I take screenshot of step "7" scenario "E02"
+Then I take screenshot of step "7" scenario "E02"

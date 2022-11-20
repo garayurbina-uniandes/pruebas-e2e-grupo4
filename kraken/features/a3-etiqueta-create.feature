@@ -2,8 +2,8 @@ Feature: Crear etiqueta
 
 @user1 @web
 Scenario: Como usuario registro una etiqueta en ghost con datos vacíos
-When I navigate to page "http://localhost:2368/ghost/#/signin"
-And I wait for 2 seconds
+Given I navigate to page "http://localhost:2368/ghost/#/signin"
+When I wait for 2 seconds
 And I take screenshot of step "1" scenario "E03"
 And I enter email "a@a.com"
 And I wait for 2 seconds
@@ -27,8 +27,8 @@ And I take screenshot of step "8" scenario "E03"
 
 @user2 @web
 Scenario: Como usuario registro una etiqueta externa en ghost con datos validos
-When I navigate to page "http://localhost:2368/ghost/#/signin"
-And I wait for 2 seconds
+Given I navigate to page "http://localhost:2368/ghost/#/signin"
+When I wait for 2 seconds
 And I take screenshot of step "1" scenario "E04"
 And I enter email "a@a.com"
 And I wait for 2 seconds
@@ -50,12 +50,12 @@ And I wait for 2 seconds
 And I take screenshot of step "7" scenario "E04"
 And I click on save tag
 And I wait for 2 seconds
-And I take screenshot of step "8" scenario "E04"
+Then I take screenshot of step "8" scenario "E04"
 
 @user3 @web
 Scenario: Como usuario registro una etiqueta interna en ghost con datos validos
-When I navigate to page "http://localhost:2368/ghost/#/signin"
-And I wait for 2 seconds
+Given I navigate to page "http://localhost:2368/ghost/#/signin"
+When I wait for 2 seconds
 And I take screenshot of step "1" scenario "E05"
 And I enter email "a@a.com"
 And I wait for 2 seconds
@@ -77,12 +77,12 @@ And I wait for 2 seconds
 And I take screenshot of step "7" scenario "E05"
 And I click on save tag
 And I wait for 2 seconds
-And I take screenshot of step "8" scenario "E05"
+Then I take screenshot of step "8" scenario "E05"
 
 @user4 @web
 Scenario: Como usuario visualizo una etiqueta creada en ghost si existe al menos una
-When I navigate to page "http://localhost:2368/ghost/#/signin"
-And I take screenshot of step "1" scenario "E06"
+Given I navigate to page "http://localhost:2368/ghost/#/signin"
+When I take screenshot of step "1" scenario "E06"
 And I enter email "a@a.com"
 And I wait for 2 seconds
 And I take screenshot of step "2" scenario "E06"

@@ -96,6 +96,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
   ```bash
   backstop test
   ```
+5. Visualizar el reporte en la ruta ./backstop/index.html  
 
 ## Funcionalidades a probar
 

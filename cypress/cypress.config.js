@@ -21,7 +21,10 @@ module.exports = {
       "cypress/e2e/create-page-new.spec.cy.js",
       "cypress/e2e/delete-page-new.spec.cy.js",
       "cypress/e2e/create-post-new.spec.cy.js",
-      "cypress/e2e/list-post-new.spec.cy.js"
+      "cypress/e2e/list-post-new.spec.cy.js",
+      "cypress/e2e/pseudoRandom/pa-create-tag.spec.cy.js",
+      "cypress/e2e/pseudoRandom/pa01-login.spec.cy.js",
+      "cypress/e2e/pseudoRandom/pa02-create-tag-invalid.spec.cy.js"
     ]
   },
 };

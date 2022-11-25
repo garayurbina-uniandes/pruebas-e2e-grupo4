@@ -1,4 +1,4 @@
-describe('Testing Tag Creation with Invalid data on Ghost', () => {
+describe('Testing Tag Creation with Invalid data, bad String on Slug', () => {
     let imageSequence = 1;
     const prefixPath = '3.41.1/E03';
     let randomPool;
@@ -35,7 +35,8 @@ describe('Testing Tag Creation with Invalid data on Ghost', () => {
         cy.wait(2000);
         cy.get('a[href="#/tags/new/"]').click(); // new tag
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
-        cy.get('#tag-name').type(randomPool['bad_string']) // create Public tag
+        cy.get('#tag-name').type(randomPool['single_word'], { delay: 0}) // create Public tag with very
+        cy.get('#tag-slug').type(randomPool['bad_string'], { delay: 0}) // create Public tag with bad string slug name
         cy.wait(2000);
         cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.ember-view').click() //save tag
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});

@@ -122,7 +122,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 |E05| Como usuario registro una etiqueta interna en ghost con datos validos                | Crear una Etiqueta      |Kraken |
 |E06| Como usuario visualizo una etiqueta pública creada en ghost si existe al menos una   | Ver todas las Etiquetas |Kraken |
 |E08| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |Kraken |
-|E10| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |Cypress |
+|E10| Como usuario creo una página y validar que se agregue al listado de páginas         | Crear una página        |Cypress |
 |E11| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |Cypress |
 |E13| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |Cypress |
 |E15| Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |Cypress |
@@ -142,7 +142,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 |E07| Como usuario visualizo una etiqueta interna creada en ghost si existe al menos una   | Ver todas las Etiquetas |
 |E08| Como usuario filtro las etiquetas y visualizo solamente las internas                 | Ver todas las etiquetas |
 |E09| Como usuario elimino una etiqueta en ghost si existe al menos una                    | Eliminar una Etiqueta   |
-|E10| Como usuario creo una página y validar que se agruegue al listado de páginas         | Crear una página        |
+|E10| Como usuario creo una página y validar que se agregue al listado de páginas         | Crear una página        |
 |E11| Como usuario elimino una página y validar que se ya no este en el listado de páginas | Eliminar una página     |
 |E12| Como usuario agrego una imagen a una página y validar que se agrugue al formulario   | Agregar una imagen a una Página       |
 |E13| Como usuario creo una entrada y la publico inmediatamente, luego verifico que esté listada | Crear Entrada, Ver todas las Entradas |

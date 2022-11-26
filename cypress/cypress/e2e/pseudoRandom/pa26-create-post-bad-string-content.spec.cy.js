@@ -16,6 +16,9 @@ describe('Como usuario creo una entrada y la publico inmediatamente, luego verif
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
+    it('Load Mockaroo', () => {
+        cy.wait(1000);
+    })
     it('Login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')

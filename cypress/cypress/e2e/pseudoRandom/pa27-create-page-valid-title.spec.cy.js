@@ -16,6 +16,9 @@ describe('Como usuario creo una página con título válido y validar que se agr
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
+    it('Load Mockaroo', () => {
+        cy.wait(1000);
+    })
     it('Create an user and login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')

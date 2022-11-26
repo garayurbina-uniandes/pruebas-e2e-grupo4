@@ -16,6 +16,9 @@ describe('Testing Register on Ghost', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
+    it('Load Mockaroo', () => {
+        cy.wait(1000);
+    })
     it('Register', () => {
         cy.get('#ember12').click();
         cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});

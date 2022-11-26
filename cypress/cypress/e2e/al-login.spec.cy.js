@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker';
-describe('Testing Login on Ghost with random data', () => {
+describe('Login fallido con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -17,7 +17,7 @@ describe('Testing Login on Ghost with random data', () => {
     })
 });
 
-describe('Testing Login on Ghost with no user', () => {
+describe('Login sin usuario con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
@@ -34,7 +34,7 @@ describe('Testing Login on Ghost with no user', () => {
     })
 });
 
-describe('Testing Login on Ghost with no password', () => {
+describe('Login sin contraseña con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })

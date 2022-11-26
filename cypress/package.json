@@ -14,5 +14,8 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "cypress": "^11.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3"
   }
 }

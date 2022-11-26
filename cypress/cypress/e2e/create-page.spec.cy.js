@@ -1,4 +1,4 @@
-describe('Como usuario creo una página y validar que se agruegue al listado de páginas', () => {
+describe('Como usuario creo una página y validar que se agregue al listado de páginas', () => {
     let imageSequence = 1;
     const prefixPath = '3.41.1/E10';
     before(() => {

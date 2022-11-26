@@ -3,7 +3,7 @@ describe('Como usuario creo una página, publicarla y validar que se agregue al 
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Hacer login y crear página', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
@@ -49,7 +49,7 @@ describe('Como usuario creo una página, sin publicarla y validar que se agregue
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Hacer login y crear página', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
@@ -91,7 +91,7 @@ describe('Como usuario creo una página, sin publicarla, sin título y validar q
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Hacer login y crear página', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
@@ -131,7 +131,7 @@ describe('Como usuario creo una página, sin publicarla, sin descripción y vali
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Hacer login y crear página', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')
@@ -173,7 +173,7 @@ describe('Como usuario creo una página, programo publicarla y validar que se ag
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
-    it('Create an user and login', () => {
+    it('Hacer login y crear página', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
             cy.get('input[name="password"]').type('GhAuthorEx1*')

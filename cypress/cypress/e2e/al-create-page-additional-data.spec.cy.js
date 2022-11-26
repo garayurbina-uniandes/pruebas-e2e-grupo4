@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker';
 import {format} from "date-fns";
 
-/*describe('Como usuario creo una página, con URL y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('Como usuario creo una página, con URL y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -514,7 +514,7 @@ describe('Como usuario creo una página, con inyección de código header y vali
                 expect($value.length).to.equal(pageBeforeQuantity + 1)
             });
     });
-});*/
+});
 
 describe('Como usuario creo una página, con inyección de código footer y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {

@@ -1,4 +1,5 @@
 import {faker} from '@faker-js/faker';
+
 describe('Registar un usuario sin nombre con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
@@ -20,6 +21,7 @@ describe('Registar un usuario sin nombre con datos aleatorios', () => {
     });
 
 });
+
 
 describe('Registar un usuario con email no valido con datos aleatorios', () => {
     before(() => {
@@ -44,6 +46,7 @@ describe('Registar un usuario con email no valido con datos aleatorios', () => {
     });
 });
 
+
 describe('Registrar un usuario con contraseña solo números con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
@@ -67,6 +70,7 @@ describe('Registrar un usuario con contraseña solo números con datos aleatorio
     });
 });
 
+
 describe('Registar un usuario con titulo sitio con más de 200 caracteres con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
@@ -89,6 +93,7 @@ describe('Registar un usuario con titulo sitio con más de 200 caracteres con da
             });
     });
 });
+
 
 describe('Registrar un usuario con datos aleatorios', () => {
     before(() => {

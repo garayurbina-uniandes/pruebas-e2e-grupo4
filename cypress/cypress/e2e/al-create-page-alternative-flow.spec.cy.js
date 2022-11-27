@@ -212,17 +212,6 @@ describe('Como usuario creo una página, con metadata y validar que se agregue a
         cy.wait(1000);
         cy.get('a[href="#/pages/"]').click();
         cy.wait(2000);
-        let pageBeforeQuantity = 0;
-        let elementToTest = 'h3[class="gh-content-entry-title"]';
-        cy.document().then(($document) => { //Check if Element exists
-            const documentResult = $document.querySelectorAll(elementToTest)
-            if (documentResult.length) {
-                cy.get('h3[class="gh-content-entry-title"]')
-                    .then(($value) => {
-                        pageBeforeQuantity = $value.length
-                    });
-            }
-        })
         cy.get('a[href="#/editor/page/"]').first().click();
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type(faker.datatype.string());
@@ -233,7 +222,7 @@ describe('Como usuario creo una página, con metadata y validar que se agregue a
         cy.wait(2000);
         cy.get('li[class="nav-list-item"]').first().click();
         cy.wait(2000);
-        cy.get('input[id="meta-title"]').type(faker.lorem.word());
+        cy.get('input[id="meta-title"]').type(faker.datatype.string(75));
         cy.wait(1000);
         cy.get('span[style="color: rgb(226, 84, 64);"]')
             .then(($value) => {
@@ -258,17 +247,6 @@ describe('Como usuario creo una página con título con 50 palabras, y se valida
         cy.wait(1000);
         cy.get('a[href="#/pages/"]').click();
         cy.wait(2000);
-        let pageBeforeQuantity = 0;
-        let elementToTest = 'h3[class="gh-content-entry-title"]';
-        cy.document().then(($document) => { //Check if Element exists
-            const documentResult = $document.querySelectorAll(elementToTest)
-            if (documentResult.length) {
-                cy.get('h3[class="gh-content-entry-title"]')
-                    .then(($value) => {
-                        pageBeforeQuantity = $value.length
-                    });
-            }
-        })
         cy.get('a[href="#/editor/page/"]').first().click();
         cy.wait(2000);
         cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type(faker.lorem.words(50));

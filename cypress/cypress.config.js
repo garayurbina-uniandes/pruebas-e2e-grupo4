@@ -4,7 +4,8 @@ module.exports = {
       // implement node event listeners here
     },
     specPattern: [
-      "cypress/e2e/*.spec.cy.js"
+      "cypress/e2e/*.spec.cy.js",
+      "cypress/e2e/pseudoRandom/*.js"
     ]
   },
 };

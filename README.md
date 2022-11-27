@@ -4,6 +4,8 @@
 
 ### Ejecución de pruebas Generación pseudo-aleatoria
 
+En la wiki se encuentra la descripción de la implementación de las estrategias: https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/wiki/Generaci%C3%B3n-de-Datos-Semana-7
+
 Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
 
 * Ghost 3.41.1
@@ -22,7 +24,7 @@ npm run open
 ```
 Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/pseudoRandom, es importante que se ejecute primero el test pa00-register que es el que realiza el registro del usuario. 
 
-### Para ejecutar las pruebas aleatorias de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 7
+### Pruebas Aleatorias
 
 #### Requisitos
 

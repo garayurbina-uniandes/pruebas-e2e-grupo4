@@ -98,6 +98,29 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
   ```
 5. Visualizar el reporte en la ruta ./backstop/backstop_data/html_report/index.html
 
+### Para ejecutar las pruebas aleatorias de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 7
+
+#### Requisitos
+
+* Instalación nueva de Ghost versión 3.41.1 accesible desde el puerto 2372.
+```docker run -d -e url=http://localhost:2372 -p 2372:2368 --name ghost_3.41.1_register ghost:3.41.1```
+* Instalación nueva de Ghost versión 4.44.0 accesible desde el puerto 3073.
+```docker run -d -e url=http://localhost:2373 -p 2373:2368 --name ghost_3.41.1_page ghost:3.41.1```
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test:
+  ```bash
+  npm test
+  ```
+4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+
 ## Funcionalidades a probar
 
 * 1. Crear una Entrada  

@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker';
 describe('Login fallido con datos aleatorios', () => {
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:2373/ghost/#/signin')
     })
     it('Login', () => {
         cy.get('form').within(() => {
@@ -19,7 +19,7 @@ describe('Login fallido con datos aleatorios', () => {
 
 describe('Login sin usuario con datos aleatorios', () => {
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:2373/ghost/#/signin')
     })
     it('Login', () => {
         cy.get('form').within(() => {
@@ -36,7 +36,7 @@ describe('Login sin usuario con datos aleatorios', () => {
 
 describe('Login sin contraseña con datos aleatorios', () => {
     before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
+        cy.visit('http://localhost:2373/ghost/#/signin')
     })
     it('Login', () => {
         cy.get('form').within(() => {

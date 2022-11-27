@@ -2,6 +2,26 @@
 
 ## Ejecución de pruebas Semana 7
 
+### Ejecución de pruebas Generación pseudo-aleatoria
+
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
+
+* Ghost 3.41.1
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+Posteriormente en la carpeta de cypress ejecutar el comando
+  ```bash
+  npm run test:pseudo-random
+  ```
+Esto ejecutará automáticamente y en el orden requerido los test pseudo-aleatorios. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
+```bash
+npm run open
+```
+Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/pseudoRandom, es importante que se ejecute primero el test pa00-register que es el que realiza el registro del usuario. 
+
 ### Para ejecutar las pruebas aleatorias de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 7
 
 #### Requisitos

@@ -2,9 +2,12 @@
 
 ## Ejecución de pruebas Semana 7
 
-### Ejecución de pruebas Generación pseudo-aleatoria
 
 En la wiki se encuentra la descripción de la implementación de las estrategias: https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/wiki/Generaci%C3%B3n-de-Datos-Semana-7
+
+En el siguiente excel se visualizan los escenarios implementados para las 3 estrategias [Documento de Escenarios de generación de datos](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/ER_QXl0DOlNJi0rSzdDqt2sBU0MXkYkpILBUVfa7qYhQ1g?e=X4vKGq)
+
+### Ejecución de pruebas Generación pseudo-aleatoria
 
 Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
 

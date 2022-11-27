@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker';
-describe('Testing Register on Ghost with random data with no name', () => {
+
+describe('Registar un usuario sin nombre con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
     })
@@ -21,7 +22,8 @@ describe('Testing Register on Ghost with random data with no name', () => {
 
 });
 
-describe('Testing Register on Ghost with random data with invalid email ', () => {
+
+describe('Registar un usuario con email no valido con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
     })
@@ -44,7 +46,8 @@ describe('Testing Register on Ghost with random data with invalid email ', () =>
     });
 });
 
-describe('Testing Register on Ghost with random data with password only numbers ', () => {
+
+describe('Registrar un usuario con contraseña solo números con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
     })
@@ -67,7 +70,8 @@ describe('Testing Register on Ghost with random data with password only numbers 
     });
 });
 
-describe('Testing Register on Ghost with title with more than 200 characters', () => {
+
+describe('Registar un usuario con titulo sitio con más de 200 caracteres con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
     })
@@ -90,7 +94,8 @@ describe('Testing Register on Ghost with title with more than 200 characters', (
     });
 });
 
-describe('Testing Register on Ghost with random data', () => {
+
+describe('Registrar un usuario con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2372/ghost/#/signin')
     })
@@ -113,4 +118,3 @@ describe('Testing Register on Ghost with random data', () => {
             });
     });
 });
-

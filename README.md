@@ -83,6 +83,10 @@ Para la ejecución los escenarios se requiere realizar una instalación limpia d
   ```bash
   cd cypress
   ```
+* Instalar las dependencias:
+  ```bash
+  npm i
+  ```
 * Y luego ejecutar el comando para correr los respectivos tests
   ```bash
   npm run test:apriori

@@ -5,7 +5,8 @@ module.exports = {
     },
     specPattern: [
       "cypress/e2e/*.spec.cy.js",
-      "cypress/e2e/pseudoRandom/*.js"
+      "cypress/e2e/pseudoRandom/*.js",
+      "cypress/e2e/random/*.js"
     ]
   },
 };

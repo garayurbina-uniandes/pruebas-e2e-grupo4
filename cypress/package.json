@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/cypress run --headed --browser chrome",
     "open": "./node_modules/.bin/cypress open",
-    "test:pseudo-random": "./node_modules/.bin/cypress run --spec cypress/e2e/pseudoRandom/* --headed --browser chrome"
+    "test:pseudo-random": "./node_modules/.bin/cypress run --spec cypress/e2e/pseudoRandom/* --headed --browser chrome",
+    "test:random": "./node_modules/.bin/cypress run --spec cypress/e2e/random/* --headed --browser chrome"
   },
   "keywords": [],
   "author": "",

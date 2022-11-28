@@ -17,7 +17,15 @@ Para ejecutar los escenarios se requiere realizar una instalación limpia de Gho
   docker rm ghost_3.41.1
   docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
   ```
-Posteriormente en la carpeta de cypress ejecutar el comando
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test
   ```bash
   npm run test:pseudo-random
   ```

@@ -1,4 +1,4 @@
-describe('Create post with big text as title', () => {
+describe('Create post with custom post url', () => {
     let dataPool;
     try {
         const data = require('./data/apriori.json');
@@ -21,7 +21,6 @@ describe('Create post with big text as title', () => {
             cy.get('button.login.gh-btn.gh-btn-blue.gh-btn-block.gh-btn-icon.ember-view').click()
         });
     })
-
     it('Create a post', () => {
         cy.wait(2000);
         cy.get('a[href="#/posts/"]').should('be.visible');
@@ -35,21 +34,27 @@ describe('Create post with big text as title', () => {
             });
         cy.get('a.ember-view.gh-btn.gh-btn-green').click();
         cy.wait(1000);
-        cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type(dataPool['stringBig'])
+        cy.get('textarea.gh-editor-title.ember-text-area.gh-input.ember-view').type(dataPool['title'])
         cy.wait(1000);
-        cy.get('div[data-placeholder="Begin writing your post..."]').type(dataPool['words'])
+        cy.get('div[data-placeholder="Begin writing your post..."]').type(dataPool['text'])
         cy.wait(1000);
         cy.get('button.post-settings').click();
         cy.wait(2000);
-        cy.get('input[placeholder="YYYY-MM-DD"]').clear();
+        cy.get('input[id="url"]').clear().type(dataPool['words']);
         cy.wait(2000);
-        cy.get('button[class="close settings-menu-header-action"]').click();cy.wait(1000);
+        cy.get('button[class="close settings-menu-header-action"]').click();
         cy.wait(2000);
         cy.get('.gh-publishmenu').click();
-        cy.wait(2000);
+        cy.wait(1000);
         cy.get('.gh-publishmenu-button').click();
         cy.wait(1000);
         cy.get('article.gh-notification.gh-notification-passive.ember-view').should('be.visible');
         cy.wait(1000);
+        cy.get('a.blue.link.fw4.flex.items-center.ember-view').click();
+        cy.wait(1000);
+        cy.get('h3[class="gh-content-entry-title"]')
+            .then(($value) => {
+                expect($value.length).to.equal(postsBeforeCreate + 1)
+            });
     })
 });

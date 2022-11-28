@@ -14,12 +14,6 @@ describe('Create post with valid content', () => {
     it('Load data', () => {
         cy.wait(1000);
     })
-    before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
-    })
-    it('Load Mockaroo', () => {
-        cy.wait(1000);
-    })
     it('Login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')

@@ -14,12 +14,6 @@ describe('Create post with publish date in the future', () => {
     it('Load data', () => {
         cy.wait(1000);
     })
-    before(() => {
-        cy.visit('http://localhost:2368/ghost/#/signin')
-    })
-    it('Load Mockaroo', () => {
-        cy.wait(1000);
-    })
     it('Login', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('a@a.com')
@@ -54,7 +48,7 @@ describe('Create post with publish date in the future', () => {
         cy.get('.gh-publishmenu-button').click();
         cy.wait(1000);
         cy.get('article.gh-notification.gh-notification-passive.ember-view').should('be.visible');
-        cy.wait(100000);
+        cy.wait(1000);
         cy.get('a.blue.link.fw4.flex.items-center.ember-view').click();
         cy.wait(1000);
         cy.get('h3[class="gh-content-entry-title"]')

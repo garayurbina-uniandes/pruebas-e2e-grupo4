@@ -53,20 +53,3 @@ describe('Create post with published date in the future', () => {
         cy.wait(1000);
     })
 });
-
-
-
-
-function getRandomPool(response) {
-    if (response !== undefined) {
-        let randomInt = getRandomInt(0, 1000);
-        return response[randomInt];
-    }
-}
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-
-};

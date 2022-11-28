@@ -22,7 +22,8 @@ module.exports = {
       "cypress/e2e/delete-page-new.spec.cy.js",
       "cypress/e2e/create-post-new.spec.cy.js",
       "cypress/e2e/list-post-new.spec.cy.js",
-      "cypress/e2e/pseudoRandom/*"
+      "cypress/e2e/pseudoRandom/*",
+      "cypress/e2e/aPriori/*"
     ]
   },
 };

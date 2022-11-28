@@ -31,8 +31,17 @@ Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/pseudoRando
 
 #### Requisitos
 
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost. En este caso las pruebas aleatorias necesitan tener Ghost corriendo en
+dos puertos diferentes, en uno de ellos se ejecutan las pruebas de registro e inicio de sesión y en el otro se ejecutan las pruebas de creación de página.
+
+Para las pruebas de creación de página es necesario realizar un login exitoso, es por esto que al incio de cada una de estas pruebas se hace un login con datos definidos,
+el usuario con el login se crea al inicio de la ejecución del todas las pruebas aleatorias.
+
 * Instalación nueva de Ghost versión 3.41.1 accesible desde el puerto 2372.
-```docker run -d -e url=http://localhost:2372 -p 2372:2368 --name ghost_3.41.1_register ghost:3.41.1```
+  ```bash
+  docker run -d -e url=http://localhost:2372 -p 2372:2368 --name ghost_3.41.1_register ghost:3.41.1
+  docker run -d -e url=http://localhost:2373 -p 2373:2368 --name ghost_3.41.1_page ghost:3.41.1
+  ```
 
 1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
   ```bash
@@ -44,9 +53,11 @@ Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/pseudoRando
   ```
 3. Ejecutar los test:
   ```bash
-  npm test
+  run test:random
   ```
 4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+
+Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
 
 ## Instalar aplicación sobre pruebas
 

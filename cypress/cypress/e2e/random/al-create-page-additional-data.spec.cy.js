@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker';
 import {format} from "date-fns";
 
-describe('Como usuario creo una página, con URL y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL14 - Como usuario creo una página, con URL y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -53,7 +53,7 @@ describe('Como usuario creo una página, con URL y validar que se agregue al lis
     });
 });
 
-describe('Como usuario creo una página, con fecha y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL15 - Como usuario creo una página, con fecha y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -105,7 +105,7 @@ describe('Como usuario creo una página, con fecha y validar que se agregue al l
     });
 });
 
-describe('Como usuario creo una página, con etiqueta y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL16 - Como usuario creo una página, con etiqueta y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -158,7 +158,7 @@ describe('Como usuario creo una página, con etiqueta y validar que se agregue a
 });
 
 
-describe('Como usuario creo una página, con extracto y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL17 - Como usuario creo una página, con extracto y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -210,7 +210,7 @@ describe('Como usuario creo una página, con extracto y validar que se agregue a
     });
 });
 
-describe('Como usuario creo una página, con extracto y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL18 - Como usuario creo una página, con autor y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -262,7 +262,7 @@ describe('Como usuario creo una página, con extracto y validar que se agregue a
     });
 });
 
-describe('Como usuario creo una página, con metadata y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL19 - Como usuario creo una página, con metadata y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -322,7 +322,7 @@ describe('Como usuario creo una página, con metadata y validar que se agregue a
     });
 });
 
-describe('Como usuario creo una página, con tarjeta twitter y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL20 - Como usuario creo una página, con tarjeta twitter y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -380,7 +380,7 @@ describe('Como usuario creo una página, con tarjeta twitter y validar que se ag
     });
 });
 
-describe('Como usuario creo una página, con tarjeta facebook y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL21 - Como usuario creo una página, con tarjeta facebook y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -438,7 +438,7 @@ describe('Como usuario creo una página, con tarjeta facebook y validar que se a
     });
 });
 
-describe('Como usuario creo una página, con inyección de código header y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL29 - Como usuario creo una página, con inyección de código header y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -496,7 +496,7 @@ describe('Como usuario creo una página, con inyección de código header y vali
     });
 });
 
-describe('Como usuario creo una página, con inyección de código footer y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL30 - Como usuario creo una página, con inyección de código footer y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })

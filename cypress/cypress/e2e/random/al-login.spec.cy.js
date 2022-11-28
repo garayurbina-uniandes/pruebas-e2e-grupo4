@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker';
-describe('Login fallido con datos aleatorios', () => {
+describe('AL06 - Login fallido con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -17,7 +17,7 @@ describe('Login fallido con datos aleatorios', () => {
     })
 });
 
-describe('Login sin usuario con datos aleatorios', () => {
+describe('AL07 - Login sin usuario con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -34,7 +34,7 @@ describe('Login sin usuario con datos aleatorios', () => {
     })
 });
 
-describe('Login sin contraseña con datos aleatorios', () => {
+describe('AL08 - Login sin contraseña con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })

@@ -43,7 +43,7 @@ describe('Create post with big text as title', () => {
         cy.wait(2000);
         cy.get('input[placeholder="YYYY-MM-DD"]').clear();
         cy.wait(2000);
-        cy.get('button[class="close settings-menu-header-action"]').click();cy.wait(1000);
+        cy.get('button[class="close settings-menu-header-action"]').click();
         cy.wait(2000);
         cy.get('.gh-publishmenu').click();
         cy.wait(2000);

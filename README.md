@@ -1,5 +1,64 @@
 # pruebas-e2e-grupo4
 
+## Ejecución de pruebas Semana 7
+
+
+En la wiki se encuentra la descripción de la implementación de las estrategias: https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/wiki/Generaci%C3%B3n-de-Datos-Semana-7
+
+En el siguiente excel se visualizan los escenarios implementados para las 3 estrategias [Documento de Escenarios de generación de datos](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/ER_QXl0DOlNJi0rSzdDqt2sBU0MXkYkpILBUVfa7qYhQ1g?e=X4vKGq)
+
+### Ejecución de pruebas Generación pseudo-aleatoria
+
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
+
+* Ghost 3.41.1
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+Posteriormente en la carpeta de cypress ejecutar el comando
+  ```bash
+  npm run test:pseudo-random
+  ```
+Esto ejecutará automáticamente y en el orden requerido los test pseudo-aleatorios. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
+```bash
+npm run open
+```
+Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/pseudoRandom, es importante que se ejecute primero el test pa00-register que es el que realiza el registro del usuario. 
+
+### Pruebas Aleatorias
+
+#### Requisitos
+
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost. En este caso las pruebas aleatorias necesitan tener Ghost corriendo en
+dos puertos diferentes, en uno de ellos se ejecutan las pruebas de registro e inicio de sesión y en el otro se ejecutan las pruebas de creación de página.
+
+Para las pruebas de creación de página es necesario realizar un login exitoso, es por esto que al incio de cada una de estas pruebas se hace un login con datos definidos,
+el usuario con el login se crea al inicio de la ejecución del todas las pruebas aleatorias.
+
+* Instalación nueva de Ghost versión 3.41.1 accesible desde el puerto 2372.
+  ```bash
+  docker run -d -e url=http://localhost:2372 -p 2372:2368 --name ghost_3.41.1_register ghost:3.41.1
+  docker run -d -e url=http://localhost:2373 -p 2373:2368 --name ghost_3.41.1_page ghost:3.41.1
+  ```
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test:
+  ```bash
+  run test:random
+  ```
+4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+
+Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
+
 ## Instalar aplicación sobre pruebas
 
 ### Opción 1 de Instalación
@@ -17,7 +76,7 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
   docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0
   ```
 
-## Ejecución de pruebas
+## Ejecución de pruebas Semana 5 y 6
 
 ### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 

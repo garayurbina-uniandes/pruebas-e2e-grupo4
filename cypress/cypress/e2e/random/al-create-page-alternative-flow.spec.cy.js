@@ -1,6 +1,6 @@
 import {faker} from '@faker-js/faker';
 
-describe('Como usuario creo una página con título solo números, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL24 - Como usuario creo una página con título solo números, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -46,7 +46,7 @@ describe('Como usuario creo una página con título solo números, publicarla y 
     });
 });
 
-describe('Como usuario creo una página con descripción solo números, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL25 - Como usuario creo una página con descripción solo números, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -92,7 +92,7 @@ describe('Como usuario creo una página con descripción solo números, publicar
     });
 });
 
-describe('Como usuario creo una página, con URL solo números y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL26 - Como usuario creo una página, con URL solo números y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -144,7 +144,7 @@ describe('Como usuario creo una página, con URL solo números y validar que se 
     });
 });
 
-describe('Como usuario creo una página, con texto alfanúmerico en fecha y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL27 - Como usuario creo una página, con texto alfanúmerico en fecha y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -196,7 +196,7 @@ describe('Como usuario creo una página, con texto alfanúmerico en fecha y vali
     });
 });
 
-describe('Como usuario creo una página, con metadata y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL28 - Como usuario creo una página, con título metadata largo y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -231,7 +231,7 @@ describe('Como usuario creo una página, con metadata y validar que se agregue a
     });
 });
 
-describe('Como usuario creo una página con título con 50 palabras, y se valida registro con datos aleatorios', () => {
+describe('AL31 - Como usuario creo una página con título con 50 palabras, y se valida registro con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -262,7 +262,7 @@ describe('Como usuario creo una página con título con 50 palabras, y se valida
     });
 });
 
-describe('Como usuario creo una página con descripción con 1000 palabras, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL32 - Como usuario creo una página con descripción con 1000 palabras, publicarla y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })
@@ -304,7 +304,7 @@ describe('Como usuario creo una página con descripción con 1000 palabras, publ
     });
 });
 
-describe('Como usuario creo una página, con fecha solo números y validar que se agregue al listado de páginas con datos aleatorios', () => {
+describe('AL33 - Como usuario creo una página, con fecha solo números y validar que se agregue al listado de páginas con datos aleatorios', () => {
     before(() => {
         cy.visit('http://localhost:2373/ghost/#/signin')
     })

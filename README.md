@@ -67,6 +67,32 @@ el usuario con el login se crea al inicio de la ejecución del todas las pruebas
 
 Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
 
+## Ejecución de pruebas con generación de datos a priori
+
+Para la generación de datos, se usó la página Moockaru y se descargó el dataset en formato JSON, éste se encuentra en la carpeta: `cypress/cypress/e2e/aPriori/data`.
+
+Para la ejecución los escenarios se requiere realizar una instalación limpia de Ghost de la versión 3.41.1.
+
+* Instalar Ghost v3.41.1
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+* Posteriormente debemos ubicarnos en la carpeta `cypress` del proyecto
+  ```bash
+  cd cypress
+  ```
+* Y luego ejecutar el comando para correr los respectivos tests
+  ```bash
+  npm run test:apriori
+  ```
+* En caso de presentar error, es posible ejecutar los test manualmente desde la interfaz de Cypress, para esto se debe ejecucar el siguiente comando:
+  ```bash
+  npm run open
+  ```
+  En caso de correr los test de forma manual es necesario primero ejecutar el test `ap01-register-valid-data.spec.cy` en una instalación limpia de ghost para poder realizar el registro de la cuenta a usar en los tests.
+
 ## Instalar aplicación sobre pruebas
 
 ### Opción 1 de Instalación

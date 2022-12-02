@@ -1,5 +1,7 @@
 describe('Testing Login on Ghost with only password', () => {
     let dataPool;
+    let imageSequence = 1;
+    const prefixPath = '3.41.1';
     try {
         const data = require('./data/apriori.json');
         dataPool = data[Math.floor(Math.random() * data.length)];
@@ -20,6 +22,7 @@ describe('Testing Login on Ghost with only password', () => {
             cy.get('button.login.gh-btn.gh-btn-blue.gh-btn-block.gh-btn-icon.ember-view').click()
         });
         cy.wait(2000);
+        cy.screenshot(`${prefixPath}/${imageSequence++}`, {overwrite: true});
         cy.get('p[class="main-error"]') //Expect have error for invalid data
             .then($value => {
                 expect($value.length).to.equal(1)

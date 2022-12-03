@@ -252,3 +252,37 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 |E15| Como usuario creo una entrada, la programo para publicación en 5 minutos y luego verifico que esté listada | Crear Entrada, Publicar Entrada, Ver todas las Entradas |
 |E16| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
 |E17| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |
+
+
+## Semana 3
+
+### Ejución de pruebas exploratorias con Playwright
+
+#### Pasos
+
+1. Instalar una nueva de Ghost versión 3.41.1 accesible desde el puerto 2368. Se debe utilizar una versión sin datos.
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+
+2. Entrar a la carpeta de ripuppet, desde la raiz del proyecto:
+  ```bash
+  cd ripuppet
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test con headless:
+  ```bash
+  node index.js http://localhost:2368/ghost false
+  ```
+
+O también se pueden ejecutar los test en sin headless
+  ```bash
+  node index.js http://localhost:2368/ghost true
+  ```
+
+4. Resultados: Para ver los resultados se debe abrir la carpeta `results` adentro se encontrará los resultados organizados por fecha de ejecición, se ingresa al más reciente y se podrá ver tres carpetas `chromium`, `firefox` y `webkit`, para el resultado de cada navegador, se debe abrir el archivo `report.html` que se encuentra en cada carpeta.

@@ -1,5 +1,6 @@
 # Video Presentación Final
 [Enlace video presentación Final](https://uniandes-my.sharepoint.com/:v:/g/personal/j_garay_uniandes_edu_co/ER01EXfOQo5Ar58egvvifzQBCNt4Yy3nn0F5iLwJmO144g?e=ZgPhxH)
+[Estrategia de Pruebas](https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/Estrategia%20Final%20Pruebas.pdf)
 
 ## Ejecución de pruebas Semana 7
 

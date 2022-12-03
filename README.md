@@ -1,6 +1,78 @@
 # Video Presentación Final
 [Enlace video presentación Final](https://uniandes-my.sharepoint.com/:v:/g/personal/j_garay_uniandes_edu_co/ER01EXfOQo5Ar58egvvifzQBCNt4Yy3nn0F5iLwJmO144g?e=ZgPhxH)
 
+## Ejecución de pruebas Semana 8
+
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+
+Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test
+  ```bash
+  npm run test:features
+  ```
+Esto ejecutará automáticamente y en el orden requerido los test. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
+```bash
+npm run open
+```
+
+Para ejecutar el monkey se requiere realizar una instalación limpia de Ghost
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+
+Para ejecutar el monkey, seguir los siguiente pasos:
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar el test de la creación de usuario para que el monkey pueda hacer un login exitoso, para esto es 
+    necesario ir a las pruebas de cypress y ejecutar el script de creación de usuario
+  ```bash
+  npm run open
+  ```
+  Ejecutar el archivo e2e/features/register.spec.cy.js
+
+4. Luego ir a la carpeta de monkey, para esto debe entrar desde la raíz del proyecto:
+  ```bash
+  cd monkey
+  ```
+5. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+6. Ejecutar el monkey
+  ```bash
+  npm run monkey
+  ```
+7. Ejecutar smart monkey (opcional)
+  ```bash
+  npm run smart-monkey
+  ```
+
+La ejecución de las pruebas de validación de datos se pueden seguir las instrucciones de la semana 7
+
+
 ## Ejecución de pruebas Semana 7
 
 

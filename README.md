@@ -26,9 +26,10 @@ Para ejecutar los escenarios se requiere realizar una instalación limpia de Gho
   ```bash
   npm i
   ```
-3. Ejecutar los test
+3. Ejecutar los test en chrome y firefox, es importante tener los navegadores instalados en la máquina para que los test se ejecuten correctamente
   ```bash
   npm run test:pseudo-random
+  npm run test:pseudo-random-firefox
   ```
 Esto ejecutará automáticamente y en el orden requerido los test pseudo-aleatorios. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
 ```bash
@@ -88,9 +89,10 @@ Para la ejecución los escenarios se requiere realizar una instalación limpia d
   ```bash
   npm i
   ```
-* Y luego ejecutar el comando para correr los respectivos tests
+* Y luego ejecutar el comando para correr los respectivos tests, en chrome y firefox, importante tener los navegadores instalados en la máquina donde se ejecuten las pruebas
   ```bash
   npm run test:apriori
+  npm run test:apriori-firefox
   ```
 * En caso de presentar error, es posible ejecutar los test manualmente desde la interfaz de Cypress, para esto se debe ejecucar el siguiente comando:
   ```bash

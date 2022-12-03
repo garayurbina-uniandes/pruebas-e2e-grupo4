@@ -136,7 +136,13 @@ el usuario con el login se crea al inicio de la ejecución del todas las pruebas
   ```bash
   run test:random
   ```
-4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+
+4Ejecutar los test en firefox (opcional):
+  ```bash
+  run test:random-firefox
+  ```
+
+5. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
 
 Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
 

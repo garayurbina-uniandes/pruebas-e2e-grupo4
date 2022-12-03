@@ -1,4 +1,4 @@
-# Video Presentación Final
+# Video Presentación Final Semana 8
 - [Enlace video presentación Final](https://uniandes-my.sharepoint.com/:v:/g/personal/j_garay_uniandes_edu_co/ER01EXfOQo5Ar58egvvifzQBCNt4Yy3nn0F5iLwJmO144g?e=ZgPhxH)
 - [Documento Estrategia de Pruebas](https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/Estrategia%20Final%20Pruebas.pdf)
 - [Inventario de Pruebas Exploratorias](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/EW74tixf1lpNnDxpzDcdje8BdLH57DRF4Ab1LN8zLNXE7g?e=VcsyaE)

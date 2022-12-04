@@ -75,7 +75,7 @@ Para ejecutar el monkey, seguir los siguiente pasos:
 La ejecución de las pruebas de validación de datos se pueden seguir las instrucciones de la semana 7
 
 
-## Ejecución de pruebas Semana 7
+## Ejecución de pruebas Generación de datos
 
 
 En la wiki se encuentra la descripción de la implementación de las estrategias: https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/wiki/Generaci%C3%B3n-de-Datos-Semana-7
@@ -197,7 +197,7 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
   docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0
   ```
 
-## Ejecución de pruebas Semana 5 y 6
+## Ejecución de pruebas E2E y pruebas de regresión visual
 
 ### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 
@@ -292,7 +292,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 * 10. Agregar una imagen a una Página
 * 11. Iniciar Sesión
 
-## Escenarios Semana 6
+## Escenarios Regresión Visual
 |Id| Nombre del escenario                                                                 | Funcionalidades           | API de pruebas|
 |---|--------------------------------------------------------------------------------------|-------------------------|----------------|
 |E01| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |Kraken y Cypress |
@@ -310,7 +310,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 
 
 
-## Escenarios Semana 5
+## Escenarios E2E
 |Id| Nombre del escenario                                                                 | Funcionalidades           |
 |---|--------------------------------------------------------------------------------------|-------------------------|
 |E01| Como usuario inicio sesión en ghost con datos válidos                                | Iniciar Sesión          |
@@ -331,7 +331,7 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 |E16| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
 |E17| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |
 
-## Semana 3
+## GUI-Ripping
 
 ### Ejecución de pruebas exploratorias con Playwright
 

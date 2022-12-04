@@ -5,32 +5,6 @@
 
 ## Ejecución de Monkey
 
-Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
-  ```bash
-  docker stop ghost_3.41.1
-  docker rm ghost_3.41.1
-  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
-  ```
-
-Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
-
-1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
-  ```bash
-  cd cypress
-  ```
-2. Instalar las dependencias:
-  ```bash
-  npm i
-  ```
-3. Ejecutar los test
-  ```bash
-  npm run test:features
-  ```
-Esto ejecutará automáticamente y en el orden requerido los test. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
-```bash
-npm run open
-```
-
 Para ejecutar el monkey se requiere realizar una instalación limpia de Ghost
   ```bash
   docker stop ghost_3.41.1
@@ -196,8 +170,35 @@ Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.4
   ```bash
   docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0
   ```
+## Ejecución de pruebas E2E
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
 
-## Ejecución de pruebas E2E y pruebas de regresión visual
+Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test
+  ```bash
+  npm run test:features
+  ```
+Esto ejecutará automáticamente y en el orden requerido los test. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
+```bash
+npm run open
+```
+
+
+## Ejecución de pruebas E2E con regresión visual
 
 ### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
 

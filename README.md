@@ -3,6 +3,8 @@
 - [Documento Estrategia de Pruebas](https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/Estrategia%20Final%20Pruebas.pdf)
 - [Inventario de Pruebas Exploratorias](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/EW74tixf1lpNnDxpzDcdje8BdLH57DRF4Ab1LN8zLNXE7g?e=VcsyaE)
 
+En caso de que algún enlace no funcione correctamente, los tres archivos también se encuentran cargados al repositorio para su consulta
+
 ## Ejecución de Monkey
 
 Para ejecutar el monkey se requiere realizar una instalación limpia de Ghost

@@ -187,22 +187,7 @@ Para la ejecución los escenarios se requiere realizar una instalación limpia d
   ```
   En caso de correr los test de forma manual es necesario primero ejecutar el test `ap01-register-valid-data.spec.cy` en una instalación limpia de ghost para poder realizar el registro de la cuenta a usar en los tests.
 
-## Instalar aplicación sobre pruebas
 
-### Opción 1 de Instalación
-
-Para esta instalación se requiere tener Docker instalado
-
-Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.41.1 y versión 4.44.0
-
-* Ghost 3.41.1
-  ```bash
-  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
-  ```
-* Ghost 4.44.0
-  ```bash
-  docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0
-  ```
 ## Ejecución de pruebas E2E
 Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
   ```bash
@@ -234,6 +219,21 @@ npm run open
 ## Ejecución de pruebas E2E con regresión visual
 
 ### Para ejecutar las pruebas de Kraken, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
+
+#### Instalar aplicación sobre pruebas
+
+Para esta instalación se requiere tener Docker instalado
+
+Ejecutar los siguientes comandos en el terminal para instalar ghost versión 3.41.1 y versión 4.44.0
+
+* Ghost 3.41.1
+  ```bash
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+* Ghost 4.44.0
+  ```bash
+  docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.44.0 ghost:4.44.0
+  ```
 
 #### Requisitos
 

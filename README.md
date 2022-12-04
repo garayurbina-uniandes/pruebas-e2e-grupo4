@@ -123,7 +123,7 @@ el usuario con el login se crea al inicio de la ejecución del todas las pruebas
 
 Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
 
-## Ejecución de pruebas con generación de datos a priori
+### Ejecución de pruebas con generación de datos a priori
 
 Para la generación de datos, se usó la página Moockaru y se descargó el dataset en formato JSON, éste se encuentra en la carpeta: `cypress/cypress/e2e/aPriori/data`.
 

@@ -3,6 +3,78 @@
 - [Documento Estrategia de Pruebas](https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/Estrategia%20Final%20Pruebas.pdf)
 - [Inventario de Pruebas Exploratorias](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/EW74tixf1lpNnDxpzDcdje8BdLH57DRF4Ab1LN8zLNXE7g?e=VcsyaE)
 
+## Ejecución de pruebas Semana 8
+
+Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+
+Para ejecutar las pruebas de Cypress, seguir los siguiente pasos, este proceso ejecuta las pruebas de los escenarios de la Semana 5 y Semana 6
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar los test
+  ```bash
+  npm run test:features
+  ```
+Esto ejecutará automáticamente y en el orden requerido los test. Si se presenta algún problema también es posible ejecutar los test individualmente utilizando la interfaz gráfica de cypress mediante el comando:
+```bash
+npm run open
+```
+
+Para ejecutar el monkey se requiere realizar una instalación limpia de Ghost
+  ```bash
+  docker stop ghost_3.41.1
+  docker rm ghost_3.41.1
+  docker run -d -e url=http://localhost:2368 -p 2368:2368 --name ghost_3.41.1 ghost:3.41.1
+  ```
+
+Para ejecutar el monkey, seguir los siguiente pasos:
+
+1. Entrar a la carpeta de Cypress, desde la raiz del proyecto:
+  ```bash
+  cd cypress
+  ```
+2. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+3. Ejecutar el test de la creación de usuario para que el monkey pueda hacer un login exitoso, para esto es 
+    necesario ir a las pruebas de cypress y ejecutar el script de creación de usuario
+  ```bash
+  npm run open
+  ```
+  Ejecutar el archivo e2e/features/register.spec.cy.js
+
+4. Luego ir a la carpeta de monkey, para esto debe entrar desde la raíz del proyecto:
+  ```bash
+  cd monkey
+  ```
+5. Instalar las dependencias:
+  ```bash
+  npm i
+  ```
+6. Ejecutar el monkey
+  ```bash
+  npm run monkey
+  ```
+7. Ejecutar smart monkey (opcional)
+  ```bash
+  npm run smart-monkey
+  ```
+
+La ejecución de las pruebas de validación de datos se pueden seguir las instrucciones de la semana 7
+
+
 ## Ejecución de pruebas Semana 7
 
 
@@ -67,7 +139,13 @@ el usuario con el login se crea al inicio de la ejecución del todas las pruebas
   ```bash
   run test:random
   ```
-4. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
+
+4Ejecutar los test en firefox (opcional):
+  ```bash
+  run test:random-firefox
+  ```
+
+5. Se ejecutarán los test automáticamente iniciando con el registro por lo que es importante correrlos sobre una instalación limpia de ghost, puesto que el registro es una operación que se realiza una sola vez en la versión 3.41.1 de ghost utilizada
 
 Los archivos de pruebas pueden encontrarse en la carpeta cypress/e2e/random, es importante que se ejecute primero el test al-a-register-user que es el que realiza el registro del usuario fijo para las pruebas de creación de página.
 

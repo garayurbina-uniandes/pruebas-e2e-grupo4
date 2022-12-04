@@ -3,7 +3,7 @@
 - [Documento Estrategia de Pruebas](https://github.com/garayurbina-uniandes/pruebas-e2e-grupo4/blob/main/Estrategia%20Final%20Pruebas.pdf)
 - [Inventario de Pruebas Exploratorias](https://uniandes-my.sharepoint.com/:x:/g/personal/j_garay_uniandes_edu_co/EW74tixf1lpNnDxpzDcdje8BdLH57DRF4Ab1LN8zLNXE7g?e=VcsyaE)
 
-## Ejecución de pruebas Semana 8
+## Ejecución de Monkey
 
 Para ejecutar los escenarios se requiere realizar una instalación limpia de Ghost
   ```bash
@@ -331,10 +331,9 @@ A continuación se presentan las instrucciones para ejecutar el reporte generado
 |E16| Como usuario elimino una entrada, luego verifio que ya no esté listada | Eliminar Entrada, Ver todas las Entradas |
 |E17| Como usuario entro al listado de entradas y filtro por publicadas y por autor  | Ver todas las Entradas |
 
-
 ## Semana 3
 
-### Ejución de pruebas exploratorias con Playwright
+### Ejecución de pruebas exploratorias con Playwright
 
 #### Pasos
 
